@@ -1,5 +1,7 @@
 package org.acom.httpClient;
 
-public interface HttpConnector {
+import org.acom.beans.ConfigBean;
 
+public interface HttpConnector {
+    int detectServer(ConfigBean configBean);
 }
