@@ -3,13 +3,12 @@ package org.acom.prtgGenerator.Impl;
 import org.acom.Exception.InvalidDateException;
 import org.acom.beans.ConfigBean;
 import org.acom.beans.GraphBean;
-import org.acom.prtgGenerator.PrtgGenerator;
+import org.acom.prtgGenerator.URLGenerator;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Arrays;
 
-public class PrtgGeneratorImpl implements PrtgGenerator {
+public class URLGeneratorImpl implements URLGenerator {
 
     @Override
     public URL GraphURLGenerator(ConfigBean configBean, GraphBean graphBean) {
@@ -25,5 +24,10 @@ public class PrtgGeneratorImpl implements PrtgGenerator {
         } catch (MalformedURLException | InvalidDateException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @Override
+    public URL XMLURLGenerator(ConfigBean configBean) {
+        return null;
     }
 }

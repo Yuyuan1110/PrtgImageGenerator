@@ -6,7 +6,8 @@ import org.acom.beans.GraphBean;
 
 import java.net.URL;
 
-public interface PrtgGenerator {
+public interface URLGenerator {
 
     URL GraphURLGenerator(ConfigBean configBean, GraphBean graphBean);
+    URL XMLURLGenerator(ConfigBean configBean);
 }

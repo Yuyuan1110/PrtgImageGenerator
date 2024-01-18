@@ -5,8 +5,8 @@ import org.acom.beans.ConfigBean;
 import org.acom.beans.GraphBean;
 import org.acom.configReader.ConfigReader;
 import org.acom.configReader.Impl.ConfigReaderImpl;
-import org.acom.prtgGenerator.Impl.PrtgGeneratorImpl;
-import org.acom.prtgGenerator.PrtgGenerator;
+import org.acom.prtgGenerator.Impl.URLGeneratorImpl;
+import org.acom.prtgGenerator.URLGenerator;
 import org.junit.Test;
 
 import java.net.URL;
@@ -23,7 +23,7 @@ public class PrtgGeneratorTest {
         gb.setStartDate("2023-01-01-00-00-00");
         gb.setEndDate("2023-10-1-23-59-00");
 
-        PrtgGenerator pg = new PrtgGeneratorImpl();
+        URLGenerator pg = new URLGeneratorImpl();
         URL url = pg.GraphURLGenerator(cb, gb);
 
         System.out.println("ID: " + gb.getId());
