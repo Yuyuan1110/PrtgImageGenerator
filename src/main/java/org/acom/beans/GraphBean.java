@@ -20,6 +20,7 @@ public class GraphBean {
     String password;
     int[] hide;
 
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
     public GraphBean() {
     }
 
@@ -59,9 +60,10 @@ public class GraphBean {
     public String getStartDate() throws InvalidDateException {
         if (startDate != null) {
             try {
-                Date inputDate = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").parse(startDate);
+                sdf.setLenient(false);
+                Date inputDate = sdf.parse(startDate);
                 Date currentDate = new Date();
-                Date end = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").parse(getEndDate());
+                Date end = sdf.parse(getEndDate());
 
                 if (inputDate.before(currentDate) && inputDate.before(end)) {
                     return startDate;
@@ -84,9 +86,9 @@ public class GraphBean {
     public String getEndDate() throws InvalidDateException {
         if (endDate != null && startDate != null) {
             try {
-                Date inputDate = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").parse(endDate);
+                Date inputDate = sdf.parse(endDate);
                 Date currentDate = new Date();
-                Date start = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").parse(startDate);
+                Date start = sdf.parse(startDate);
 
                 if (inputDate.before(currentDate) && inputDate.after(start)) {
                     return endDate;

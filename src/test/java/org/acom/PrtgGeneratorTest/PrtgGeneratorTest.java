@@ -14,14 +14,14 @@ import java.net.URL;
 public class PrtgGeneratorTest {
     @Test
     public void graphURLGeneratorTest() throws InvalidDateException {
-        ConfigBean cb = new ConfigBean();
+        ConfigBean cb;
         ConfigReader rc = new ConfigReaderImpl();
         cb = rc.readConfig();
         GraphBean gb = new GraphBean();
         gb.setId(7877);
         gb.setConfigBean(cb);
-        gb.setStartDate("2023-01-01-00-00-00");
-        gb.setEndDate("2023-10-1-23-59-00");
+        gb.setStartDate("2023-01-1-0-0-0");
+        gb.setEndDate("2023-10-1-23-59-0");
 
         URLGenerator pg = new URLGeneratorImpl();
         URL url = pg.GraphURLGenerator(cb, gb);
@@ -35,7 +35,8 @@ public class PrtgGeneratorTest {
         System.out.println("graphStyling: " + gb.getGraphStyling());
         System.out.println("username: " + gb.getUsername());
         System.out.println("password: " + gb.getPassword());
-
         System.out.println("url: " + url);
+
+        System.out.println(cb.getFullServerIP());
     }
 }

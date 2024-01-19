@@ -8,6 +8,7 @@ public class ConfigBean {
     private String serverIP;
     private String port;
     private String protocol;
+    private String fullServerIP;
     private boolean logger;
     private String username;
     private String password;
@@ -15,10 +16,11 @@ public class ConfigBean {
     public ConfigBean() {
     }
 
-    public ConfigBean(String serverIP, String port, String protocol, boolean logger, String username, String password) {
+    public ConfigBean(String serverIP, String port, String protocol, String fullServerIP, boolean logger, String username, String password) {
         this.serverIP = serverIP;
         this.port = port;
         this.protocol = protocol;
+        this.fullServerIP = fullServerIP;
         this.logger = logger;
         this.username = username;
         this.password = password;
@@ -110,6 +112,14 @@ public class ConfigBean {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getFullServerIP() {
+        return this.getProtocol().toLowerCase()+"://"+this.getServerIP()+":"+this.getPort()+"/";
+    }
+
+    public void setFullServerIP(String fullServerIP) {
+        this.fullServerIP = fullServerIP;
     }
 
     @Override

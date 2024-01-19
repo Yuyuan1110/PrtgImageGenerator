@@ -3,6 +3,7 @@ import org.acom.beans.ConfigBean;
 import org.acom.configReader.ConfigReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Path;
 import java.util.Properties;
 
 public class ConfigReaderImpl implements ConfigReader {
@@ -20,5 +21,11 @@ public class ConfigReaderImpl implements ConfigReader {
             throw new RuntimeException(e);
         }
         return configBean;
+    }
+
+    @Override
+    public String[] readXML(Path path) {
+
+        return new String[0];
     }
 }

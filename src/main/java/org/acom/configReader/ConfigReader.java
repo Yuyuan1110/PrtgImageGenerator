@@ -6,4 +6,5 @@ import java.nio.file.Path;
 
 public interface ConfigReader {
     ConfigBean readConfig();
+    String[] readXML(Path path);
 }

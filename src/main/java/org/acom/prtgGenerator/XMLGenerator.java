@@ -5,6 +5,6 @@ import org.acom.beans.ConfigBean;
 import java.net.URL;
 
 public interface XMLGenerator {
-    public void downloadXML(URL url);
+    public void downloadXML(URL[] urls);
     public void createXMLConfig();
 }

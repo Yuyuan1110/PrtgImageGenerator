@@ -27,7 +27,18 @@ public class URLGeneratorImpl implements URLGenerator {
     }
 
     @Override
-    public URL XMLURLGenerator(ConfigBean configBean) {
-        return null;
+    public URL[] XMLURLGenerator(ConfigBean configBean, String obj) throws MalformedURLException {
+        switch(obj){
+            case "device":
+                return new URL[]{new URL(configBean.getFullServerIP()+"api/table.xml?content=devices&columns=objid,name&username="+configBean.getUsername()+"&password="+configBean.getPassword())};
+            case "sensor":
+                return null;
+            case "channel":
+                return null;
+            default:
+                return null;
+        }
     }
+
+
 }
