@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="17" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>2130</objid>
+    <name>Ping</name>
+   </item>
+   <item>
+    <objid>2135</objid>
+    <name>System Uptime</name>
+   </item>
+   <item>
+    <objid>2136</objid>
+    <name>Load Avg.</name>
+   </item>
+   <item>
+    <objid>2137</objid>
+    <name>CPU Load</name>
+   </item>
+   <item>
+    <objid>2138</objid>
+    <name>Memory: Real Memory</name>
+   </item>
+   <item>
+    <objid>2139</objid>
+    <name>Memory: Swap Space</name>
+   </item>
+   <item>
+    <objid>2140</objid>
+    <name>Disk Free: /backup2</name>
+   </item>
+   <item>
+    <objid>2141</objid>
+    <name>Disk Free: /</name>
+   </item>
+   <item>
+    <objid>2142</objid>
+    <name>Disk Free: /home</name>
+   </item>
+   <item>
+    <objid>2143</objid>
+    <name>Disk Free: /usr</name>
+   </item>
+   <item>
+    <objid>2144</objid>
+    <name>Disk Free: /var</name>
+   </item>
+   <item>
+    <objid>2145</objid>
+    <name>Processes Count (httpd)</name>
+   </item>
+   <item>
+    <objid>2146</objid>
+    <name>Processes Count (mysqld)</name>
+   </item>
+   <item>
+    <objid>2147</objid>
+    <name>Processes Count (php)</name>
+   </item>
+   <item>
+    <objid>2149</objid>
+    <name>Mail Queue</name>
+   </item>
+   <item>
+    <objid>2150</objid>
+    <name>Network Traffic (bge1)</name>
+   </item>
+   <item>
+    <objid>6157</objid>
+    <name>SSL Certificate Sensor</name>
+   </item>
+  </sensor>

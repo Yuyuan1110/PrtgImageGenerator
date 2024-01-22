@@ -27,12 +27,13 @@ public class URLGeneratorImpl implements URLGenerator {
     }
 
     @Override
-    public URL[] XMLURLGenerator(ConfigBean configBean, String obj) throws MalformedURLException {
+    public URL XMLURLGenerator(ConfigBean configBean, String obj, String objId) throws MalformedURLException {
         switch(obj){
             case "device":
-                return new URL[]{new URL(configBean.getFullServerIP()+"api/table.xml?content=devices&columns=objid,name&username="+configBean.getUsername()+"&password="+configBean.getPassword())};
+                return new URL(configBean.getFullServerIP()+"api/table.xml?content=devices&columns=objid,name&username="+configBean.getUsername()+"&password="+configBean.getPassword());
             case "sensor":
-                return null;
+
+                return new URL(configBean.getFullServerIP()+"api/table.xml?content=sensor&columns=objid,name&username="+configBean.getUsername()+"&password="+configBean.getPassword()+"&id="+objId);
             case "channel":
                 return null;
             default:
@@ -40,5 +41,9 @@ public class URLGeneratorImpl implements URLGenerator {
         }
     }
 
+
+    private String[] getSensorsIdFromDeviceXML(){
+    return null;
+    }
 
 }

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="38" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>2200</objid>
+    <name>System Uptime</name>
+   </item>
+   <item>
+    <objid>2263</objid>
+    <name>Ping</name>
+   </item>
+   <item>
+    <objid>2264</objid>
+    <name>Load Avg.</name>
+   </item>
+   <item>
+    <objid>2265</objid>
+    <name>CPU Load</name>
+   </item>
+   <item>
+    <objid>2266</objid>
+    <name>Cloud Ping</name>
+   </item>
+   <item>
+    <objid>2267</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>2268</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>2269</objid>
+    <name>Disk Free: /</name>
+   </item>
+   <item>
+    <objid>2270</objid>
+    <name>Disk Free: /home</name>
+   </item>
+   <item>
+    <objid>2271</objid>
+    <name>Network Traffic (eno1)</name>
+   </item>
+   <item>
+    <objid>2274</objid>
+    <name>Processes Count (httpd)</name>
+   </item>
+   <item>
+    <objid>2275</objid>
+    <name>Processes Count (mysqld)</name>
+   </item>
+   <item>
+    <objid>2277</objid>
+    <name>HTTP Full Web Page</name>
+   </item>
+   <item>
+    <objid>2286</objid>
+    <name>FamilyMart CRM API response time</name>
+   </item>
+   <item>
+    <objid>2287</objid>
+    <name>Apache ModStatus PerfStats</name>
+   </item>
+   <item>
+    <objid>2289</objid>
+    <name>Aptilo SMP CCS Response Time</name>
+   </item>
+   <item>
+    <objid>3275</objid>
+    <name>Fresh CDR Records</name>
+   </item>
+   <item>
+    <objid>3761</objid>
+    <name>GET_CDR_SUCCESS</name>
+   </item>
+   <item>
+    <objid>3762</objid>
+    <name>SSL Certificate Sensor</name>
+   </item>
+   <item>
+    <objid>3763</objid>
+    <name>HP Server Drives Status</name>
+   </item>
+   <item>
+    <objid>3765</objid>
+    <name>HP Server RAID Status (Smart Array P440ar)</name>
+   </item>
+   <item>
+    <objid>3766</objid>
+    <name>HP Server Fan Status</name>
+   </item>
+   <item>
+    <objid>3767</objid>
+    <name>HP Server PSU Status</name>
+   </item>
+   <item>
+    <objid>5026</objid>
+    <name>Ping Jitter</name>
+   </item>
+   <item>
+    <objid>5036</objid>
+    <name>Physical Disk: sda</name>
+   </item>
+   <item>
+    <objid>5037</objid>
+    <name>Physical Disk: sda1</name>
+   </item>
+   <item>
+    <objid>5038</objid>
+    <name>Physical Disk: sda2</name>
+   </item>
+   <item>
+    <objid>5039</objid>
+    <name>Physical Disk: sda3</name>
+   </item>
+   <item>
+    <objid>5040</objid>
+    <name>Physical Disk: dm-0</name>
+   </item>
+   <item>
+    <objid>5041</objid>
+    <name>Physical Disk: dm-1</name>
+   </item>
+   <item>
+    <objid>5042</objid>
+    <name>Physical Disk: dm-2</name>
+   </item>
+   <item>
+    <objid>5043</objid>
+    <name>Physical Disk: sdb</name>
+   </item>
+   <item>
+    <objid>5045</objid>
+    <name>Active Processes</name>
+   </item>
+   <item>
+    <objid>5046</objid>
+    <name>Sensor Factory</name>
+   </item>
+   <item>
+    <objid>5197</objid>
+    <name>System Uptime</name>
+   </item>
+   <item>
+    <objid>6888</objid>
+    <name>Disk Free: /home</name>
+   </item>
+   <item>
+    <objid>7224</objid>
+    <name>Port 80 TCP Connection Time</name>
+   </item>
+   <item>
+    <objid>7225</objid>
+    <name>Sensor Factory 3</name>
+   </item>
+  </sensor>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="35" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>6268</objid>
+    <name>(10101) GigabitEthernet0/1 Traffic</name>
+   </item>
+   <item>
+    <objid>6269</objid>
+    <name>(10102) GigabitEthernet0/2 Traffic</name>
+   </item>
+   <item>
+    <objid>6270</objid>
+    <name>(10103) GigabitEthernet0/3 Traffic</name>
+   </item>
+   <item>
+    <objid>6271</objid>
+    <name>(10104) GigabitEthernet0/4 Traffic</name>
+   </item>
+   <item>
+    <objid>6272</objid>
+    <name>(10105) GigabitEthernet0/5 Traffic</name>
+   </item>
+   <item>
+    <objid>6273</objid>
+    <name>(10106) GigabitEthernet0/6 Traffic</name>
+   </item>
+   <item>
+    <objid>6274</objid>
+    <name>(10107) GigabitEthernet0/7 Traffic</name>
+   </item>
+   <item>
+    <objid>6275</objid>
+    <name>(10108) GigabitEthernet0/8 Traffic</name>
+   </item>
+   <item>
+    <objid>6276</objid>
+    <name>(10109) GigabitEthernet0/9 Traffic</name>
+   </item>
+   <item>
+    <objid>6277</objid>
+    <name>(10110) GigabitEthernet0/10 Traffic</name>
+   </item>
+   <item>
+    <objid>6278</objid>
+    <name>(10111) GigabitEthernet0/11 Traffic</name>
+   </item>
+   <item>
+    <objid>6279</objid>
+    <name>(10112) GigabitEthernet0/12 Traffic</name>
+   </item>
+   <item>
+    <objid>6280</objid>
+    <name>(10113) GigabitEthernet0/13 Traffic</name>
+   </item>
+   <item>
+    <objid>6281</objid>
+    <name>(10114) GigabitEthernet0/14 Traffic</name>
+   </item>
+   <item>
+    <objid>6282</objid>
+    <name>(10115) GigabitEthernet0/15 Traffic</name>
+   </item>
+   <item>
+    <objid>6283</objid>
+    <name>(10116) GigabitEthernet0/16 Traffic</name>
+   </item>
+   <item>
+    <objid>6284</objid>
+    <name>(10117) GigabitEthernet0/17 Traffic</name>
+   </item>
+   <item>
+    <objid>6285</objid>
+    <name>(10118) GigabitEthernet0/18 Traffic</name>
+   </item>
+   <item>
+    <objid>6286</objid>
+    <name>(10119) GigabitEthernet0/19 Traffic</name>
+   </item>
+   <item>
+    <objid>6287</objid>
+    <name>(10120) GigabitEthernet0/20 Traffic</name>
+   </item>
+   <item>
+    <objid>6288</objid>
+    <name>(10121) GigabitEthernet0/21 Traffic</name>
+   </item>
+   <item>
+    <objid>6289</objid>
+    <name>(10122) GigabitEthernet0/22 Traffic</name>
+   </item>
+   <item>
+    <objid>6290</objid>
+    <name>(10123) GigabitEthernet0/23 Traffic</name>
+   </item>
+   <item>
+    <objid>6291</objid>
+    <name>(10124) GigabitEthernet0/24 Traffic</name>
+   </item>
+   <item>
+    <objid>6292</objid>
+    <name>(10125) GigabitEthernet0/25 Traffic</name>
+   </item>
+   <item>
+    <objid>6293</objid>
+    <name>(10126) GigabitEthernet0/26 Traffic</name>
+   </item>
+   <item>
+    <objid>6294</objid>
+    <name>(10127) GigabitEthernet0/27 Traffic</name>
+   </item>
+   <item>
+    <objid>6295</objid>
+    <name>(10128) GigabitEthernet0/28 Traffic</name>
+   </item>
+   <item>
+    <objid>6296</objid>
+    <name>(10501) Null0 Traffic</name>
+   </item>
+   <item>
+    <objid>6297</objid>
+    <name>System Health CPU</name>
+   </item>
+   <item>
+    <objid>6298</objid>
+    <name>System Health Fans</name>
+   </item>
+   <item>
+    <objid>6299</objid>
+    <name>System Health Power Supplies</name>
+   </item>
+   <item>
+    <objid>6300</objid>
+    <name>System Health Memory</name>
+   </item>
+   <item>
+    <objid>6302</objid>
+    <name>Sensor Factory Test</name>
+   </item>
+   <item>
+    <objid>6986</objid>
+    <name>Sensor Factory 2</name>
+   </item>
+  </sensor>

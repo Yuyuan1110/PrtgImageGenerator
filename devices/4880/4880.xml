@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="23" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>4882</objid>
+    <name>PING</name>
+   </item>
+   <item>
+    <objid>4883</objid>
+    <name>SSL Security Check (Port 443) 3</name>
+   </item>
+   <item>
+    <objid>4885</objid>
+    <name>HTTP</name>
+   </item>
+   <item>
+    <objid>4886</objid>
+    <name>SNMP System Uptime</name>
+   </item>
+   <item>
+    <objid>4888</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>4889</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>4890</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+   <item>
+    <objid>4891</objid>
+    <name>SNMP Meminfo 1</name>
+   </item>
+   <item>
+    <objid>4892</objid>
+    <name>Disk Free: /</name>
+   </item>
+   <item>
+    <objid>4893</objid>
+    <name>Disk Free: /dev/shm</name>
+   </item>
+   <item>
+    <objid>4894</objid>
+    <name>Disk Free: /boot</name>
+   </item>
+   <item>
+    <objid>4926</objid>
+    <name>SNMP Load Avg. 1</name>
+   </item>
+   <item>
+    <objid>4927</objid>
+    <name>(001) lo Traffic</name>
+   </item>
+   <item>
+    <objid>4928</objid>
+    <name>(002) eth0 Traffic</name>
+   </item>
+   <item>
+    <objid>5189</objid>
+    <name>Memory (Swap) Free</name>
+   </item>
+   <item>
+    <objid>5190</objid>
+    <name>Active Processes</name>
+   </item>
+   <item>
+    <objid>5477</objid>
+    <name>HTTP Web Service</name>
+   </item>
+   <item>
+    <objid>5499</objid>
+    <name>HTTP 完整網頁</name>
+   </item>
+   <item>
+    <objid>5569</objid>
+    <name>Processes: httpd</name>
+   </item>
+   <item>
+    <objid>5570</objid>
+    <name>Processes: mysqld</name>
+   </item>
+   <item>
+    <objid>5576</objid>
+    <name>port 443</name>
+   </item>
+   <item>
+    <objid>6705</objid>
+    <name>MySQL</name>
+   </item>
+   <item>
+    <objid>7903</objid>
+    <name>SNMP CPU Load</name>
+   </item>
+  </sensor>

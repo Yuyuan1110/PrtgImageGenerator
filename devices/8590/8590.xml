@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="12" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>8591</objid>
+    <name>Ping</name>
+   </item>
+   <item>
+    <objid>8630</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>8631</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>8632</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+   <item>
+    <objid>9109</objid>
+    <name>SNMP CPU Load</name>
+   </item>
+   <item>
+    <objid>9110</objid>
+    <name>(001) lo Traffic</name>
+   </item>
+   <item>
+    <objid>9111</objid>
+    <name>(002) Broadcom Inc. and subsidiaries NetXtreme BCM5720 2-port Gigabit Ethernet PCIe Traffic</name>
+   </item>
+   <item>
+    <objid>9117</objid>
+    <name>MySQL</name>
+   </item>
+   <item>
+    <objid>9137</objid>
+    <name>(004) Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 Traffic</name>
+   </item>
+   <item>
+    <objid>9138</objid>
+    <name>(006) Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 Traffic</name>
+   </item>
+   <item>
+    <objid>9143</objid>
+    <name>(012) bond0 Traffic</name>
+   </item>
+   <item>
+    <objid>9144</objid>
+    <name>Disk Free: /</name>
+   </item>
+  </sensor>

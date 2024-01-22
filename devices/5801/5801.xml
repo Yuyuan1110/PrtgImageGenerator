@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="7" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>5802</objid>
+    <name>SNMP CPU 負載 3</name>
+   </item>
+   <item>
+    <objid>5803</objid>
+    <name>(001) lo Traffic</name>
+   </item>
+   <item>
+    <objid>5804</objid>
+    <name>(002) Broadcom Corporation NetXtreme BCM5720 Gigabit Ethernet PCIe Traffic</name>
+   </item>
+   <item>
+    <objid>5805</objid>
+    <name>(005) Broadcom Corporation NetXtreme BCM5720 Gigabit Ethernet PCIe Traffic</name>
+   </item>
+   <item>
+    <objid>5806</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>5807</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>5808</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+  </sensor>

@@ -10,5 +10,5 @@ import java.net.URL;
 public interface URLGenerator {
 
     URL GraphURLGenerator(ConfigBean configBean, GraphBean graphBean);
-    URL[] XMLURLGenerator(ConfigBean configBean, String obj) throws MalformedURLException;// String obj parameter receiving "device", "sensor", "channel".
+    URL XMLURLGenerator(ConfigBean configBean, String obj, String objId) throws MalformedURLException;// String obj parameter receiving "device", "sensor", "channel".
 }
