@@ -58,7 +58,7 @@ public class GraphBean {
     }
 
     public String getStartDate() throws InvalidDateException {
-        if (startDate != null) {
+        if (!startDate.isEmpty()) {
             try {
                 sdf.setLenient(false);
                 Date inputDate = sdf.parse(startDate);
@@ -84,11 +84,11 @@ public class GraphBean {
     }
 
     public String getEndDate() throws InvalidDateException {
-        if (endDate != null && startDate != null) {
+        if (!endDate.isEmpty()) {
             try {
                 Date inputDate = sdf.parse(endDate);
                 Date currentDate = new Date();
-                Date start = sdf.parse(startDate);
+                Date start = sdf.parse(startDate.isEmpty() ? new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date()) : startDate);
 
                 if (inputDate.before(currentDate) && inputDate.after(start)) {
                     return endDate;
@@ -100,7 +100,7 @@ public class GraphBean {
                 throw new RuntimeException(e);
             }
         } else {
-            return new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date());
+            return new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date().getTime()-60*60*24*30*1000L);
         }
     }
 

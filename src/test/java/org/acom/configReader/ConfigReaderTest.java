@@ -1,12 +1,15 @@
 package org.acom.configReader;
 
+import org.acom.Exception.InvalidDateException;
 import org.acom.beans.ConfigBean;
 import org.acom.configReader.Impl.ConfigReaderImpl;
 import org.junit.Test;
 
+import java.io.File;
+
 public class ConfigReaderTest {
     @Test
-    public void readTest(){
+    public void readTest() throws InvalidDateException {
         ConfigBean CB = new ConfigBean();
         ConfigReader rc = new ConfigReaderImpl();
         CB = rc.readConfig();

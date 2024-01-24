@@ -9,6 +9,7 @@ import org.acom.prtgGenerator.Impl.URLGeneratorImpl;
 import org.acom.prtgGenerator.URLGenerator;
 import org.junit.Test;
 
+import java.io.File;
 import java.net.URL;
 
 public class PrtgGeneratorTest {
@@ -24,7 +25,7 @@ public class PrtgGeneratorTest {
         gb.setEndDate("2023-10-1-23-59-0");
 
         URLGenerator pg = new URLGeneratorImpl();
-        URL url = pg.GraphURLGenerator(cb, gb);
+        URL url = pg.GraphURLGenerator(gb);
 
         System.out.println("ID: " + gb.getId());
         System.out.println("Start Date: " + gb.getStartDate());
