@@ -20,7 +20,9 @@ target/
 .settings
 .springBeans
 .sts4-cache
-
+./devices
+./graph
+./history
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/

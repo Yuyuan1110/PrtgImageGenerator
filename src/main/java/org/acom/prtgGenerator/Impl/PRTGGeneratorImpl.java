@@ -5,6 +5,7 @@ import org.acom.beans.GraphBean;
 import org.acom.httpClient.Impl.HttpConnectorImpl;
 import org.acom.prtgGenerator.PRTGGenerator;
 import org.acom.prtgGenerator.URLGenerator;
+import org.acom.prtgGenerator.XMLDownload;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -68,7 +69,7 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
             Document settingsXML = builder.parse(new File(settingsPath));
             Element rootElement = settingsXML.getDocumentElement();
             NodeList deviceList = rootElement.getElementsByTagName("device");
-
+            XMLDownload xmlDownload = new XMLDownloadImpl();
             for (int i = 0; i < deviceList.getLength(); i++) {
                 Element deviceElement = (Element) deviceList.item(i);
                 String deviceName = deviceElement.getElementsByTagName("deviceName").item(0).getTextContent();
@@ -80,7 +81,7 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
                     Element sensorElement = (Element) sensorList.item(j);
                     String id = sensorElement.getElementsByTagName("sensorID").item(0).getTextContent();
                     URL url = urlGenerator.XMLURLGenerator("history", id, sdate, edate);
-                    downLoadXML(url, graphPath + File.separator + deviceName + File.separator + id + "."+type);
+                    xmlDownload.downloadXML(url, graphPath + File.separator + deviceName + File.separator + id + "." + type);
                 }
             }
         } catch (ParserConfigurationException | IOException | SAXException e) {
