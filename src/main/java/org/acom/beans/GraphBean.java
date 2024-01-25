@@ -18,35 +18,25 @@ public class GraphBean {
     ConfigBean configBean;
     String username;
     String password;
-    int[] hide;
+    String[] hide;
 
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
     public GraphBean() {
     }
 
-    public GraphBean(int id, String startDate, String endDate, int avg, int width, int height, String graphStyling, String username, String password, int[] hide) {
+    public GraphBean(int id, int avg, String startDate, String endDate, int width, int height, String graphStyling, ConfigBean configBean, String username, String password, String[] hide, SimpleDateFormat sdf) {
         this.id = id;
+        this.avg = avg;
         this.startDate = startDate;
         this.endDate = endDate;
-        this.avg = avg;
-        this.width = width;
-        this.height = height;
-        this.graphStyling = graphStyling;
-        this.username = username;
-        this.password = password;
-        this.hide = hide;
-    }
-
-    public GraphBean(int id, String startDate, String endDate, int avg, int width, int height, String graphStyling, ConfigBean configBean, int[] hide) {
-        this.id = id;
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.avg = avg;
         this.width = width;
         this.height = height;
         this.graphStyling = graphStyling;
         this.configBean = configBean;
+        this.username = username;
+        this.password = password;
         this.hide = hide;
+        this.sdf = sdf;
     }
 
     public int getId() {
@@ -58,7 +48,7 @@ public class GraphBean {
     }
 
     public String getStartDate() throws InvalidDateException {
-        if (!startDate.isEmpty()) {
+        if (startDate != null && !startDate.isEmpty()) {
             try {
                 sdf.setLenient(false);
                 Date inputDate = sdf.parse(startDate);
@@ -71,11 +61,11 @@ public class GraphBean {
                     throw new InvalidDateException("Error: Input date should not be greater than current system time or end time.");
                 }
             } catch (ParseException e) {
-                System.out.println("Error: Invalid date format. Please use 'yyyy-MM-dd-HH-mm-ss'.");
+                System.out.println("Error: Invalid date format. Please format to 'yyyy-MM-dd-HH-mm-ss'.");
                 throw new RuntimeException(e);
             }
         } else {
-            return new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date());
+            return new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date().getTime()-60*60*24*30*1000L);
         }
     }
 
@@ -84,7 +74,7 @@ public class GraphBean {
     }
 
     public String getEndDate() throws InvalidDateException {
-        if (!endDate.isEmpty()) {
+        if (endDate != null && !endDate.isEmpty()) {
             try {
                 Date inputDate = sdf.parse(endDate);
                 Date currentDate = new Date();
@@ -100,7 +90,7 @@ public class GraphBean {
                 throw new RuntimeException(e);
             }
         } else {
-            return new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date().getTime()-60*60*24*30*1000L);
+            return new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date());
         }
     }
 
@@ -157,11 +147,11 @@ public class GraphBean {
         this.password =  password;
     }
 
-    public int[] getHide() {
-        return (hide != null && hide.length > 0) ? hide : new int[]{-4};
+    public String[] getHide() {
+        return (hide != null && hide.length > 0) ? hide : new String[]{"-4"};
     }
 
-    public void setHide(int[] hide) {
+    public void setHide(String[] hide) {
         this.hide = hide;
     }
 

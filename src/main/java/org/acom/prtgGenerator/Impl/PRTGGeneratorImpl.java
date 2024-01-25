@@ -2,6 +2,7 @@ package org.acom.prtgGenerator.Impl;
 
 import org.acom.Exception.InvalidDateException;
 import org.acom.beans.GraphBean;
+import org.acom.beans.HistoryBean;
 import org.acom.httpClient.Impl.HttpConnectorImpl;
 import org.acom.prtgGenerator.PRTGGenerator;
 import org.acom.prtgGenerator.URLGenerator;
@@ -21,15 +22,13 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class PRTGGeneratorImpl implements PRTGGenerator {
-    URLGenerator urlGenerator = new URLGeneratorImpl();
-    final String settingsPath = "." + File.separator + "settings.xml";
-    final String graphPath = "." + File.separator + "graph";
-    final String historyPath = "." + File.separator + "history";
-    GraphBean gb = new GraphBean();
-    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+    private final URLGenerator urlGenerator = new URLGeneratorImpl();
+    private final String settingsPath = "." + File.separator + "settings.xml";
+    private final String graphPath = "." + File.separator + "graph";
+    private final String historyPath = "." + File.separator + "history";
+    private final GraphBean gb = new GraphBean();
+    private final DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
     DocumentBuilder builder;
-
-
     HttpURLConnection connection = null;
 
     @Override
@@ -49,6 +48,7 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
             for (int i = 0; i < deviceList.getLength(); i++) {
                 Element deviceElement = (Element) deviceList.item(i);
                 String deviceName = deviceElement.getElementsByTagName("deviceName").item(0).getTextContent();
+                deviceName = rename(deviceName);
                 new File(graphPath + File.separator + deviceName).mkdir();
                 NodeList sensorsList = deviceElement.getElementsByTagName("sensors");
                 Element sensorsElement = (Element) sensorsList.item(0);
@@ -63,7 +63,9 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
     public void historyDownload(String sdate, String edate, String type) {
 
         new File(historyPath).mkdir();
-
+        HistoryBean historyBean = new HistoryBean();
+        historyBean.setStartDate(sdate);
+        historyBean.setEndDate(edate);
         try {
             builder = factory.newDocumentBuilder();
             Document settingsXML = builder.parse(new File(settingsPath));
@@ -73,6 +75,7 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
             for (int i = 0; i < deviceList.getLength(); i++) {
                 Element deviceElement = (Element) deviceList.item(i);
                 String deviceName = deviceElement.getElementsByTagName("deviceName").item(0).getTextContent();
+                deviceName = rename(deviceName);
                 new File(historyPath + File.separator + deviceName).mkdir();
                 NodeList sensorsList = deviceElement.getElementsByTagName("sensors");
                 Element sensorsElement = (Element) sensorsList.item(0);
@@ -80,11 +83,12 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
                 for (int j = 0; j < sensorList.getLength(); j++) {
                     Element sensorElement = (Element) sensorList.item(j);
                     String id = sensorElement.getElementsByTagName("sensorID").item(0).getTextContent();
-                    URL url = urlGenerator.XMLURLGenerator("history", id, sdate, edate);
-                    xmlDownload.downloadXML(url, graphPath + File.separator + deviceName + File.separator + id + "." + type);
+                    historyBean.setId(id);
+                    URL url = urlGenerator.XMLURLGenerator("history", historyBean);
+                    xmlDownload.downloadXML(url, historyPath + File.separator + deviceName + File.separator + id + "." + type);
                 }
             }
-        } catch (ParserConfigurationException | IOException | SAXException e) {
+        } catch (ParserConfigurationException | IOException | SAXException | InvalidDateException e) {
             throw new RuntimeException(e);
         }
     }
@@ -94,30 +98,32 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
         for (int j = 0; j < sensorList.getLength(); j++) {
             Element sensorElement = (Element) sensorList.item(j);
             String sensorName = sensorElement.getElementsByTagName("sensorName").item(0).getTextContent();
+            sensorName = rename(sensorName);
             Element channelsElement = (Element) sensorElement.getElementsByTagName("channels").item(0);
             processChannels(channelsElement);
             gb.setId(Integer.parseInt(sensorElement.getElementsByTagName("sensorID").item(0).getTextContent()));
             URL url = urlGenerator.GraphURLGenerator(gb);
-            sensorName = rename(sensorName);
             downLoadImage(url, graphPath + File.separator + deviceName + File.separator + sensorName + ".png");
         }
     }
 
     private void processChannels(Element channelsElement) {
         NodeList channelList = channelsElement.getElementsByTagName("channel");
-        int[] channels = new int[channelList.getLength()];
+        String[] channels = new String[channelList.getLength()];
         for (int k = 0; k < channelList.getLength(); k++) {
             Element channelElement = (Element) channelList.item(k);
-            channels[k] = Integer.parseInt(channelElement.getElementsByTagName("channelID").item(0).getTextContent());
+            channels[k] = channelElement.getElementsByTagName("channelID").item(0).getTextContent();
         }
+//        System.out.println(channels.length);
         gb.setHide(channels);
     }
 
     private void downLoadImage(URL url, String path) {
 
+        connection = new HttpConnectorImpl().setConnection(url);
         try (InputStream inputStream = connection.getInputStream();
              OutputStream outputStream = Files.newOutputStream(Paths.get(path))) {
-            connection = new HttpConnectorImpl().setConnection(url);
+
 
             int responseCode = connection.getResponseCode();
 

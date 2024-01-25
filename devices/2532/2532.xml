@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="3" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>2534</objid>
+    <name>HTTP Full Web Page</name>
+   </item>
+   <item>
+    <objid>2574</objid>
+    <name>Web Page: Index Check</name>
+   </item>
+   <item>
+    <objid>9184</objid>
+    <name>Cloud HTTP</name>
+   </item>
+  </sensor>

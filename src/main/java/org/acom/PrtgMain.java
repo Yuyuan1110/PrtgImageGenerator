@@ -3,8 +3,6 @@ package org.acom;
 
 import org.acom.mainFunction.CommonsCLI;
 import org.acom.mainFunction.Impl.CommonsCLIImpl;
-import org.acom.Exception.CannotDetectServerException;
-import org.acom.Exception.InvalidDateException;
 import org.acom.mainFunction.Impl.LogicCheckerImpl;
 import org.acom.mainFunction.LogicChecker;
 import org.acom.prtgGenerator.PRTGGenerator;
@@ -13,11 +11,10 @@ import org.acom.prtgGenerator.Impl.XMLGeneratorImpl;
 import org.acom.prtgGenerator.XMLGenerator;
 import org.apache.commons.cli.*;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class PrtgMain {
-    public static void main(String[] args) throws InvalidDateException, CannotDetectServerException, IOException, ParseException {
+    public static void main(String[] args) throws ParseException {
         Scanner scanner = new Scanner(System.in);
         CommonsCLI commonsCLI = new CommonsCLIImpl();
         CommandLine cmd = commonsCLI.getCommonsCLI(args);
@@ -35,6 +32,7 @@ public class PrtgMain {
                     System.out.println("bye bye!");
                     System.exit(0);
                 }
+                break;
             case "history":
                 logicChecker.configFileExistsChecker();
                 System.out.println("Start to download history file, xml or csv? [xml/csv] default: xml");
@@ -43,13 +41,16 @@ public class PrtgMain {
                 } else{
                     prtgGenerator.historyDownload(cmd.getOptionValue("s"), cmd.getOptionValue("e"), "csv");
                 }
+                break;
             case "rebuild":
                 System.out.println("start to re-build the \"settings.xml\" file.");
                 XMLGenerator xmlGenerator = new XMLGeneratorImpl();
                 xmlGenerator.settingsXMLGenerator();
                 System.out.println("re-build completed, please check the file content.");
+                break;
             default:
                 System.out.println("command: java PrtgMain --[graph/history] --[start date] --[end date] \nNOTE: date format to \"yyyy-MM-dd-HH-mm-ss\"");
+                break;
         }
     }
 }

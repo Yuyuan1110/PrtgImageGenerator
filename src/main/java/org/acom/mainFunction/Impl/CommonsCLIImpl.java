@@ -15,8 +15,9 @@ public class CommonsCLIImpl implements CommonsCLI {
         options.addOption("id",true, "Get data from specific device ID.");
         CommandLineParser parser = new DefaultParser();
         CommandLine cmd = parser.parse(options, args);
-        if(!cmd.hasOption("f") && !cmd.hasOption("feature")){
-            throw new IllegalArgumentException("Required \"-f\" or \"-feature\" argument to specify config file");
+        if(!cmd.hasOption("f") && !cmd.hasOption("feature") && !cmd.hasOption("r") && !cmd.hasOption("rebuild")){
+            System.out.println("Required \"-f\" or \"--feature\" argument to specify config file.");
+            System.exit(-1);
         }
 
         return cmd;

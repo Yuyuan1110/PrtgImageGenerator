@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="1" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>3027</objid>
+    <name>Ping 2</name>
+   </item>
+  </sensor>

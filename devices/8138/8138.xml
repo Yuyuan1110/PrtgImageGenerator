@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="2" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>8146</objid>
+    <name>ES STATUS</name>
+   </item>
+   <item>
+    <objid>8148</objid>
+    <name>NODEJS API</name>
+   </item>
+  </sensor>

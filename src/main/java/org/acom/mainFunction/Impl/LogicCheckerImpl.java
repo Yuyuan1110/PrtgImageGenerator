@@ -23,8 +23,10 @@ import java.net.URL;
 import java.util.Scanner;
 
 public class LogicCheckerImpl implements LogicChecker {
-    static final String settingsPath = "." + File.separator + "settings.xml";
-    final Scanner scanner = new Scanner(System.in);
+    private static final String settingsPath = "." + File.separator + "settings.xml";
+    private static final Scanner scanner = new Scanner(System.in);
+    private static final URLGenerator urlGenerator = new URLGeneratorImpl();
+    private static final String devicePath = "." + File.separator + "devices" + File.separator + "devices.xml";
     @Override
     public void configFileExistsChecker() {
 
@@ -50,22 +52,36 @@ public class LogicCheckerImpl implements LogicChecker {
         String tmp = scanner.nextLine();
         String answer = tmp.isEmpty() ? "E" : tmp;
         if (answer.equalsIgnoreCase("d") || answer.equalsIgnoreCase("download")) {
-            URLGenerator urlGenerator = new URLGeneratorImpl();
-            XMLDownload xmlDownload = new XMLDownloadImpl();
-            try {
-                URL url = urlGenerator.XMLURLGenerator("device", "");
-                new File("." + File.separator + "devices").mkdir();
-                xmlDownload.downloadXML(url, "." + File.separator + "devices" + File.separator + "devices.xml");
-                xmlDownload.createXMLConfig();
-                XMLGenerator xmlGenerator = new XMLGeneratorImpl();
-                xmlGenerator.settingsXMLGenerator();
-            }
-             catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            downloadDeviceXML();
+            XMLGenerator xmlGenerator = new XMLGeneratorImpl();
+            xmlGenerator.settingsXMLGenerator();
 
+        } else if (answer.equalsIgnoreCase("R") || answer.equalsIgnoreCase("rebuild")){
+            if(!new File(devicePath).exists()){
+                downloadDeviceXML();
+            }
+            XMLGenerator xmlGenerator = new XMLGeneratorImpl();
+            xmlGenerator.settingsXMLGenerator();
         }
         System.out.println("Please check if the \"settings.xml\" file exists then re-run script.");
         System.exit(0);
+    }
+
+    private void downloadDeviceXML(){
+        XMLDownload xmlDownload = new XMLDownloadImpl();
+        try {
+            URL url = urlGenerator.XMLURLGenerator("device", "");
+            File f = new File("." + File.separator + "devices");
+            if (f.exists()) {
+                f.delete();
+            }
+            f.mkdir();
+            xmlDownload.downloadXML(url,devicePath );
+            xmlDownload.createXMLConfig();
+
+        }
+        catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

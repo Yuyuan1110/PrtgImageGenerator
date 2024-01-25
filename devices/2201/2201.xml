@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="2" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>2908</objid>
+    <name>Cloudwatch EngineName: mariadb [RDS]</name>
+   </item>
+   <item>
+    <objid>2909</objid>
+    <name>Cloudwatch DBInstanceIdentifier: zucast-production [RDS]</name>
+   </item>
+  </sensor>

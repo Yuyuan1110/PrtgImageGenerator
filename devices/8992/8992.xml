@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="9" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>9042</objid>
+    <name>SNMP CPU Load</name>
+   </item>
+   <item>
+    <objid>9043</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>9044</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>9045</objid>
+    <name>Memory: Real memory</name>
+   </item>
+   <item>
+    <objid>9046</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+   <item>
+    <objid>9047</objid>
+    <name>(001) vtnet0 Traffic</name>
+   </item>
+   <item>
+    <objid>9048</objid>
+    <name>(002) vtnet1 Traffic</name>
+   </item>
+   <item>
+    <objid>9051</objid>
+    <name>Disk Free: /mnt/NextCloud</name>
+   </item>
+   <item>
+    <objid>9052</objid>
+    <name>Disk Free: /mnt/NextCloud/NextCloud</name>
+   </item>
+  </sensor>

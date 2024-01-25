@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="17" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>5772</objid>
+    <name>Ping</name>
+   </item>
+   <item>
+    <objid>5773</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>5774</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>5775</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+   <item>
+    <objid>5776</objid>
+    <name>SNMP CPU Loading</name>
+   </item>
+   <item>
+    <objid>5777</objid>
+    <name>(002) eth0 Traffic</name>
+   </item>
+   <item>
+    <objid>5778</objid>
+    <name>Disk Free: /</name>
+   </item>
+   <item>
+    <objid>5779</objid>
+    <name>Disk Free: /dev/shm</name>
+   </item>
+   <item>
+    <objid>5780</objid>
+    <name>Disk Free: /boot</name>
+   </item>
+   <item>
+    <objid>5781</objid>
+    <name>SSL Certificate</name>
+   </item>
+   <item>
+    <objid>5782</objid>
+    <name>HTTP Service</name>
+   </item>
+   <item>
+    <objid>5784</objid>
+    <name>Port 80 Service</name>
+   </item>
+   <item>
+    <objid>5785</objid>
+    <name>Port 443 Service</name>
+   </item>
+   <item>
+    <objid>5786</objid>
+    <name>Port 22 Service</name>
+   </item>
+   <item>
+    <objid>5787</objid>
+    <name>Uptime</name>
+   </item>
+   <item>
+    <objid>5789</objid>
+    <name>Web Graphic on Migo Azure</name>
+   </item>
+   <item>
+    <objid>5790</objid>
+    <name>Sensor Factory</name>
+   </item>
+  </sensor>

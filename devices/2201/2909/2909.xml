@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <channels totalcount="0" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>-4</objid>
+    <objid_raw>*000000004</objid_raw>
+    <name>Downtime</name>
+   </item>
+   <item>
+    <objid>1</objid>
+    <objid_raw>0000000001</objid_raw>
+    <name>CPU Utilization</name>
+   </item>
+   <item>
+    <objid>2</objid>
+    <objid_raw>0000000002</objid_raw>
+    <name>Database Connections</name>
+   </item>
+   <item>
+    <objid>3</objid>
+    <objid_raw>0000000003</objid_raw>
+    <name>Freeable Memory</name>
+   </item>
+   <item>
+    <objid>4</objid>
+    <objid_raw>0000000004</objid_raw>
+    <name>Free Storage Space</name>
+   </item>
+   <item>
+    <objid>5</objid>
+    <objid_raw>0000000005</objid_raw>
+    <name>Read OPS</name>
+   </item>
+   <item>
+    <objid>6</objid>
+    <objid_raw>0000000006</objid_raw>
+    <name>Write OPS</name>
+   </item>
+   <item>
+    <objid>7</objid>
+    <objid_raw>0000000007</objid_raw>
+    <name>Read Latency</name>
+   </item>
+   <item>
+    <objid>8</objid>
+    <objid_raw>0000000008</objid_raw>
+    <name>Write Latency</name>
+   </item>
+   <item>
+    <objid>9</objid>
+    <objid_raw>0000000009</objid_raw>
+    <name>DB Read</name>
+   </item>
+   <item>
+    <objid>10</objid>
+    <objid_raw>0000000010</objid_raw>
+    <name>DB Write</name>
+   </item>
+   <item>
+    <objid>11</objid>
+    <objid_raw>0000000011</objid_raw>
+    <name>Swap Usage</name>
+   </item>
+   <item>
+    <objid>12</objid>
+    <objid_raw>0000000012</objid_raw>
+    <name>Bin Log Disk Usage</name>
+   </item>
+   <item>
+    <objid>13</objid>
+    <objid_raw>0000000013</objid_raw>
+    <name>Disk Queue Depth</name>
+   </item>
+   <item>
+    <objid>14</objid>
+    <objid_raw>0000000014</objid_raw>
+    <name>Network In</name>
+   </item>
+   <item>
+    <objid>15</objid>
+    <objid_raw>0000000015</objid_raw>
+    <name>Network Out</name>
+   </item>
+   <item>
+    <objid>16</objid>
+    <objid_raw>0000000016</objid_raw>
+    <name>CPU Credit Usage</name>
+   </item>
+   <item>
+    <objid>17</objid>
+    <objid_raw>0000000017</objid_raw>
+    <name>CPU Credit Balance</name>
+   </item>
+  </channels>

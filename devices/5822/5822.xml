@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="3" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>5823</objid>
+    <name>PING</name>
+   </item>
+   <item>
+    <objid>5824</objid>
+    <name>HTTP</name>
+   </item>
+   <item>
+    <objid>5825</objid>
+    <name>FTP</name>
+   </item>
+  </sensor>

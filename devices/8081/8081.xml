@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="36" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>8082</objid>
+    <name>Ping</name>
+   </item>
+   <item>
+    <objid>8084</objid>
+    <name>SNMP System Uptime</name>
+   </item>
+   <item>
+    <objid>8087</objid>
+    <name>(012) bond0 Traffic</name>
+   </item>
+   <item>
+    <objid>8090</objid>
+    <name>(015) wifi1 Traffic</name>
+   </item>
+   <item>
+    <objid>8091</objid>
+    <name>(016) wifi0 Traffic</name>
+   </item>
+   <item>
+    <objid>8096</objid>
+    <name>(021) br-lan Traffic</name>
+   </item>
+   <item>
+    <objid>8098</objid>
+    <name>(023) wifi0vap0 Traffic</name>
+   </item>
+   <item>
+    <objid>8099</objid>
+    <name>(024) wifi0vap1 Traffic</name>
+   </item>
+   <item>
+    <objid>8100</objid>
+    <name>(025) wifi0vap2 Traffic</name>
+   </item>
+   <item>
+    <objid>8101</objid>
+    <name>(026) wifi0vap3 Traffic</name>
+   </item>
+   <item>
+    <objid>8102</objid>
+    <name>(027) wifi0vap4 Traffic</name>
+   </item>
+   <item>
+    <objid>8103</objid>
+    <name>(028) wifi0vap5 Traffic</name>
+   </item>
+   <item>
+    <objid>8104</objid>
+    <name>(029) wifi0vap6 Traffic</name>
+   </item>
+   <item>
+    <objid>8105</objid>
+    <name>(003) eth0 Traffic</name>
+   </item>
+   <item>
+    <objid>8106</objid>
+    <name>(030) wifi0vap7 Traffic</name>
+   </item>
+   <item>
+    <objid>8107</objid>
+    <name>(031) wifi0vap8 Traffic</name>
+   </item>
+   <item>
+    <objid>8108</objid>
+    <name>(032) wifi0vap9 Traffic</name>
+   </item>
+   <item>
+    <objid>8109</objid>
+    <name>(033) wifi0wds0 Traffic</name>
+   </item>
+   <item>
+    <objid>8110</objid>
+    <name>(034) wifi0wds1 Traffic</name>
+   </item>
+   <item>
+    <objid>8111</objid>
+    <name>(035) wifi0wds2 Traffic</name>
+   </item>
+   <item>
+    <objid>8112</objid>
+    <name>(036) wifi0wds3 Traffic</name>
+   </item>
+   <item>
+    <objid>8113</objid>
+    <name>(037) ath1 Traffic</name>
+   </item>
+   <item>
+    <objid>8114</objid>
+    <name>(038) wifi1vap0 Traffic</name>
+   </item>
+   <item>
+    <objid>8115</objid>
+    <name>(039) wifi1vap1 Traffic</name>
+   </item>
+   <item>
+    <objid>8117</objid>
+    <name>(040) wifi1vap2 Traffic</name>
+   </item>
+   <item>
+    <objid>8118</objid>
+    <name>(041) wifi1vap3 Traffic</name>
+   </item>
+   <item>
+    <objid>8119</objid>
+    <name>(042) wifi1vap4 Traffic</name>
+   </item>
+   <item>
+    <objid>8120</objid>
+    <name>(043) wifi1vap5 Traffic</name>
+   </item>
+   <item>
+    <objid>8121</objid>
+    <name>(044) wifi1vap6 Traffic</name>
+   </item>
+   <item>
+    <objid>8122</objid>
+    <name>(045) wifi1vap7 Traffic</name>
+   </item>
+   <item>
+    <objid>8123</objid>
+    <name>(046) wifi1vap8 Traffic</name>
+   </item>
+   <item>
+    <objid>8124</objid>
+    <name>(047) wifi1vap9 Traffic</name>
+   </item>
+   <item>
+    <objid>8125</objid>
+    <name>(048) wifi1wds0 Traffic</name>
+   </item>
+   <item>
+    <objid>8134</objid>
+    <name>SSL Security Check (Port 443)</name>
+   </item>
+   <item>
+    <objid>8136</objid>
+    <name>HTTP</name>
+   </item>
+   <item>
+    <objid>9339</objid>
+    <name>SSL Certificate Sensor (Port 443)</name>
+   </item>
+  </sensor>

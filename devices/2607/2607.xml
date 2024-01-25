@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="5" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>2611</objid>
+    <name>System Uptime</name>
+   </item>
+   <item>
+    <objid>2612</objid>
+    <name>Ping</name>
+   </item>
+   <item>
+    <objid>2613</objid>
+    <name>System Health CPU</name>
+   </item>
+   <item>
+    <objid>2614</objid>
+    <name>System Health Memory</name>
+   </item>
+   <item>
+    <objid>2615</objid>
+    <name>System Health Fans</name>
+   </item>
+  </sensor>

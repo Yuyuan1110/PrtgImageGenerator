@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <channels totalcount="0" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>-4</objid>
+    <objid_raw>*000000004</objid_raw>
+    <name>Downtime</name>
+   </item>
+   <item>
+    <objid>0</objid>
+    <objid_raw>0000000000</objid_raw>
+    <name>Total</name>
+   </item>
+   <item>
+    <objid>2</objid>
+    <objid_raw>0000000002</objid_raw>
+    <name>Processor 1</name>
+   </item>
+   <item>
+    <objid>3</objid>
+    <objid_raw>0000000003</objid_raw>
+    <name>Processor 2</name>
+   </item>
+   <item>
+    <objid>4</objid>
+    <objid_raw>0000000004</objid_raw>
+    <name>Processor 3</name>
+   </item>
+   <item>
+    <objid>5</objid>
+    <objid_raw>0000000005</objid_raw>
+    <name>Processor 4</name>
+   </item>
+   <item>
+    <objid>6</objid>
+    <objid_raw>0000000006</objid_raw>
+    <name>Processor 5</name>
+   </item>
+   <item>
+    <objid>7</objid>
+    <objid_raw>0000000007</objid_raw>
+    <name>Processor 6</name>
+   </item>
+   <item>
+    <objid>8</objid>
+    <objid_raw>0000000008</objid_raw>
+    <name>Processor 7</name>
+   </item>
+   <item>
+    <objid>9</objid>
+    <objid_raw>0000000009</objid_raw>
+    <name>Processor 8</name>
+   </item>
+   <item>
+    <objid>10</objid>
+    <objid_raw>0000000010</objid_raw>
+    <name>Processor 9</name>
+   </item>
+   <item>
+    <objid>11</objid>
+    <objid_raw>0000000011</objid_raw>
+    <name>Processor 10</name>
+   </item>
+   <item>
+    <objid>12</objid>
+    <objid_raw>0000000012</objid_raw>
+    <name>Processor 11</name>
+   </item>
+   <item>
+    <objid>13</objid>
+    <objid_raw>0000000013</objid_raw>
+    <name>Processor 12</name>
+   </item>
+   <item>
+    <objid>14</objid>
+    <objid_raw>0000000014</objid_raw>
+    <name>Processor 13</name>
+   </item>
+   <item>
+    <objid>15</objid>
+    <objid_raw>0000000015</objid_raw>
+    <name>Processor 14</name>
+   </item>
+   <item>
+    <objid>16</objid>
+    <objid_raw>0000000016</objid_raw>
+    <name>Processor 15</name>
+   </item>
+   <item>
+    <objid>17</objid>
+    <objid_raw>0000000017</objid_raw>
+    <name>Processor 16</name>
+   </item>
+   <item>
+    <objid>18</objid>
+    <objid_raw>0000000018</objid_raw>
+    <name>Processor 17</name>
+   </item>
+   <item>
+    <objid>19</objid>
+    <objid_raw>0000000019</objid_raw>
+    <name>Processor 18</name>
+   </item>
+   <item>
+    <objid>20</objid>
+    <objid_raw>0000000020</objid_raw>
+    <name>Processor 19</name>
+   </item>
+   <item>
+    <objid>21</objid>
+    <objid_raw>0000000021</objid_raw>
+    <name>Processor 20</name>
+   </item>
+   <item>
+    <objid>22</objid>
+    <objid_raw>0000000022</objid_raw>
+    <name>Processor 21</name>
+   </item>
+   <item>
+    <objid>23</objid>
+    <objid_raw>0000000023</objid_raw>
+    <name>Processor 22</name>
+   </item>
+   <item>
+    <objid>24</objid>
+    <objid_raw>0000000024</objid_raw>
+    <name>Processor 23</name>
+   </item>
+   <item>
+    <objid>25</objid>
+    <objid_raw>0000000025</objid_raw>
+    <name>Processor 24</name>
+   </item>
+   <item>
+    <objid>26</objid>
+    <objid_raw>0000000026</objid_raw>
+    <name>Processor 25</name>
+   </item>
+   <item>
+    <objid>27</objid>
+    <objid_raw>0000000027</objid_raw>
+    <name>Processor 26</name>
+   </item>
+   <item>
+    <objid>28</objid>
+    <objid_raw>0000000028</objid_raw>
+    <name>Processor 27</name>
+   </item>
+   <item>
+    <objid>29</objid>
+    <objid_raw>0000000029</objid_raw>
+    <name>Processor 28</name>
+   </item>
+   <item>
+    <objid>30</objid>
+    <objid_raw>0000000030</objid_raw>
+    <name>Processor 29</name>
+   </item>
+   <item>
+    <objid>31</objid>
+    <objid_raw>0000000031</objid_raw>
+    <name>Processor 30</name>
+   </item>
+   <item>
+    <objid>32</objid>
+    <objid_raw>0000000032</objid_raw>
+    <name>Processor 31</name>
+   </item>
+   <item>
+    <objid>33</objid>
+    <objid_raw>0000000033</objid_raw>
+    <name>Processor 32</name>
+   </item>
+   <item>
+    <objid>34</objid>
+    <objid_raw>0000000034</objid_raw>
+    <name>Processor 33</name>
+   </item>
+   <item>
+    <objid>35</objid>
+    <objid_raw>0000000035</objid_raw>
+    <name>Processor 34</name>
+   </item>
+   <item>
+    <objid>36</objid>
+    <objid_raw>0000000036</objid_raw>
+    <name>Processor 35</name>
+   </item>
+   <item>
+    <objid>37</objid>
+    <objid_raw>0000000037</objid_raw>
+    <name>Processor 36</name>
+   </item>
+   <item>
+    <objid>38</objid>
+    <objid_raw>0000000038</objid_raw>
+    <name>Processor 37</name>
+   </item>
+   <item>
+    <objid>39</objid>
+    <objid_raw>0000000039</objid_raw>
+    <name>Processor 38</name>
+   </item>
+   <item>
+    <objid>40</objid>
+    <objid_raw>0000000040</objid_raw>
+    <name>Processor 39</name>
+   </item>
+   <item>
+    <objid>41</objid>
+    <objid_raw>0000000041</objid_raw>
+    <name>Processor 40</name>
+   </item>
+   <item>
+    <objid>42</objid>
+    <objid_raw>0000000042</objid_raw>
+    <name>Processor 41</name>
+   </item>
+   <item>
+    <objid>43</objid>
+    <objid_raw>0000000043</objid_raw>
+    <name>Processor 42</name>
+   </item>
+   <item>
+    <objid>44</objid>
+    <objid_raw>0000000044</objid_raw>
+    <name>Processor 43</name>
+   </item>
+   <item>
+    <objid>45</objid>
+    <objid_raw>0000000045</objid_raw>
+    <name>Processor 44</name>
+   </item>
+   <item>
+    <objid>46</objid>
+    <objid_raw>0000000046</objid_raw>
+    <name>Processor 45</name>
+   </item>
+   <item>
+    <objid>47</objid>
+    <objid_raw>0000000047</objid_raw>
+    <name>Processor 46</name>
+   </item>
+   <item>
+    <objid>48</objid>
+    <objid_raw>0000000048</objid_raw>
+    <name>Processor 47</name>
+   </item>
+   <item>
+    <objid>49</objid>
+    <objid_raw>0000000049</objid_raw>
+    <name>Processor 48</name>
+   </item>
+   <item>
+    <objid>50</objid>
+    <objid_raw>0000000050</objid_raw>
+    <name>Processor 49</name>
+   </item>
+   <item>
+    <objid>51</objid>
+    <objid_raw>0000000051</objid_raw>
+    <name>Processor 50</name>
+   </item>
+   <item>
+    <objid>52</objid>
+    <objid_raw>0000000052</objid_raw>
+    <name>Processor 51</name>
+   </item>
+   <item>
+    <objid>53</objid>
+    <objid_raw>0000000053</objid_raw>
+    <name>Processor 52</name>
+   </item>
+   <item>
+    <objid>54</objid>
+    <objid_raw>0000000054</objid_raw>
+    <name>Processor 53</name>
+   </item>
+   <item>
+    <objid>55</objid>
+    <objid_raw>0000000055</objid_raw>
+    <name>Processor 54</name>
+   </item>
+   <item>
+    <objid>56</objid>
+    <objid_raw>0000000056</objid_raw>
+    <name>Processor 55</name>
+   </item>
+   <item>
+    <objid>57</objid>
+    <objid_raw>0000000057</objid_raw>
+    <name>Processor 56</name>
+   </item>
+  </channels>

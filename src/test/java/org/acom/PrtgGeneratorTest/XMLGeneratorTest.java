@@ -23,7 +23,7 @@ public class XMLGeneratorTest {
     ConfigReader rc = new ConfigReaderImpl();
 
     @Test
-    public void XMLDownloadTest() throws IOException, InvalidDateException {
+    public void XMLDownloadTest() throws IOException {
         URLGenerator ug = new URLGeneratorImpl();
         XMLDownload xg = new XMLDownloadImpl();
         cb = rc.readConfig();
@@ -32,15 +32,9 @@ public class XMLGeneratorTest {
     }
 
     @Test
-    public void configPathTest() throws ParserConfigurationException, IOException, SAXException, InvalidDateException {
+    public void configPathTest(){
         XMLDownload xmlGenerator = new XMLDownloadImpl();
         cb = rc.readConfig();
         xmlGenerator.createXMLConfig();
-    }
-
-    @Test
-    public void testTEST(){
-        XMLGenerator x = new XMLGeneratorImpl();
-        x.settingsXMLGenerator();
     }
 }

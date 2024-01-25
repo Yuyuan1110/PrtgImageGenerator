@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="18" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>8611</objid>
+    <name>Ping</name>
+   </item>
+   <item>
+    <objid>8612</objid>
+    <name>Dell System Health</name>
+   </item>
+   <item>
+    <objid>8613</objid>
+    <name>Solid State Disk 0:1:3</name>
+   </item>
+   <item>
+    <objid>8614</objid>
+    <name>Solid State Disk 0:1:1</name>
+   </item>
+   <item>
+    <objid>8615</objid>
+    <name>Solid State Disk 0:1:2</name>
+   </item>
+   <item>
+    <objid>8616</objid>
+    <name>Solid State Disk 0:1:0</name>
+   </item>
+   <item>
+    <objid>8617</objid>
+    <name>Physical Disk 0:1:6</name>
+   </item>
+   <item>
+    <objid>8618</objid>
+    <name>Physical Disk 0:1:4</name>
+   </item>
+   <item>
+    <objid>8619</objid>
+    <name>Physical Disk 0:1:11</name>
+   </item>
+   <item>
+    <objid>8620</objid>
+    <name>Physical Disk 0:1:5</name>
+   </item>
+   <item>
+    <objid>8621</objid>
+    <name>Physical Disk 0:1:8</name>
+   </item>
+   <item>
+    <objid>8622</objid>
+    <name>Physical Disk 0:1:9</name>
+   </item>
+   <item>
+    <objid>8623</objid>
+    <name>Physical Disk 0:1:14</name>
+   </item>
+   <item>
+    <objid>8624</objid>
+    <name>Physical Disk 0:1:13</name>
+   </item>
+   <item>
+    <objid>8625</objid>
+    <name>Physical Disk 0:1:7</name>
+   </item>
+   <item>
+    <objid>8626</objid>
+    <name>Physical Disk 0:1:12</name>
+   </item>
+   <item>
+    <objid>8627</objid>
+    <name>Physical Disk 0:1:10</name>
+   </item>
+   <item>
+    <objid>8628</objid>
+    <name>Physical Disk 0:1:15</name>
+   </item>
+  </sensor>

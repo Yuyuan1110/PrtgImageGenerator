@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="6" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>3779</objid>
+    <name>Cloudwatch InstanceId: staging-web (i-10b98edd) [EC2]</name>
+   </item>
+   <item>
+    <objid>3781</objid>
+    <name>Cloudwatch InstanceId: staging-pbx (i-ad44a12c) [EC2]</name>
+   </item>
+   <item>
+    <objid>3782</objid>
+    <name>Cloudwatch InstanceId: pbx-master-production (i-adf01023) [EC2]</name>
+   </item>
+   <item>
+    <objid>3783</objid>
+    <name>Cloudwatch InstanceId: staging-wowza-01 (i-d9cc0e7d) [EC2]</name>
+   </item>
+   <item>
+    <objid>3784</objid>
+    <name>Cloudwatch AutoScalingGroupName: zucast-web (zucast-web) [EC2]</name>
+   </item>
+   <item>
+    <objid>3785</objid>
+    <name>Cloudwatch AutoScalingGroupName: zucast-websocket (zucast-websocket) [EC2]</name>
+   </item>
+  </sensor>

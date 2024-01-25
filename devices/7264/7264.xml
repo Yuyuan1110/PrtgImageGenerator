@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="8" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>7267</objid>
+    <name>Ping 4</name>
+   </item>
+   <item>
+    <objid>7268</objid>
+    <name>SNMP CPU Load 3</name>
+   </item>
+   <item>
+    <objid>7269</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>7270</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>7271</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+   <item>
+    <objid>7272</objid>
+    <name>(001) lo Traffic</name>
+   </item>
+   <item>
+    <objid>7273</objid>
+    <name>(002) em1 Traffic</name>
+   </item>
+   <item>
+    <objid>7274</objid>
+    <name>(005) em4 Traffic</name>
+   </item>
+  </sensor>

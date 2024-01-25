@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="11" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>6917</objid>
+    <name>(004) em1 Traffic</name>
+   </item>
+   <item>
+    <objid>6918</objid>
+    <name>Bouncer UDP receiver process</name>
+   </item>
+   <item>
+    <objid>6919</objid>
+    <name>MySQL Process</name>
+   </item>
+   <item>
+    <objid>6926</objid>
+    <name>Disk Free: /</name>
+   </item>
+   <item>
+    <objid>6927</objid>
+    <name>Disk Free: /dev/shm</name>
+   </item>
+   <item>
+    <objid>6928</objid>
+    <name>Disk Free: /boot</name>
+   </item>
+   <item>
+    <objid>6929</objid>
+    <name>Disk Free: /home</name>
+   </item>
+   <item>
+    <objid>6930</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>6931</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>6932</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+   <item>
+    <objid>6933</objid>
+    <name>CPU Load</name>
+   </item>
+  </sensor>
