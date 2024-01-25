@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="8" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>2517</objid>
+    <name>Wowza Server Statistics</name>
+   </item>
+   <item>
+    <objid>2518</objid>
+    <name>Wowza Virtual Host Statistics</name>
+   </item>
+   <item>
+    <objid>2519</objid>
+    <name>Wowza Applications Statistics (live-cdn)</name>
+   </item>
+   <item>
+    <objid>2529</objid>
+    <name>Wowza Applications Statistics (vod-cdn)</name>
+   </item>
+   <item>
+    <objid>2553</objid>
+    <name>Ping</name>
+   </item>
+   <item>
+    <objid>2560</objid>
+    <name>CPU Load</name>
+   </item>
+   <item>
+    <objid>2561</objid>
+    <name>Load Avg.</name>
+   </item>
+   <item>
+    <objid>2572</objid>
+    <name>System Uptime</name>
+   </item>
+  </sensor>

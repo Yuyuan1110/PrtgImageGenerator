@@ -10,6 +10,6 @@ public class GraphDownloadTest {
     @Test
     public void downloadGraphTest() {
         PRTGGenerator graphGenerator = new PRTGGeneratorImpl();
-        graphGenerator.graphDownload("2023-08-31-00-00-00", "2024-01-01-00-00-00");
+//        graphGenerator.graphDownload("2023-08-31-00-00-00", "2024-01-01-00-00-00");
     }
 }

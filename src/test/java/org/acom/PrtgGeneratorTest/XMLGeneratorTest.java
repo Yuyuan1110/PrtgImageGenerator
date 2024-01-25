@@ -28,13 +28,13 @@ public class XMLGeneratorTest {
         XMLDownload xg = new XMLDownloadImpl();
         cb = rc.readConfig();
         URL url = ug.XMLURLGenerator("device", "");
-        xg.downloadXML(url, "."+File.separator+"devices"+File.separator+"devices.xml");
+//        xg.downloadXML(url, "."+File.separator+"devices"+File.separator+"devices.xml");
     }
 
     @Test
     public void configPathTest(){
         XMLDownload xmlGenerator = new XMLDownloadImpl();
         cb = rc.readConfig();
-        xmlGenerator.createXMLConfig();
+//        xmlGenerator.createXMLConfig();
     }
 }

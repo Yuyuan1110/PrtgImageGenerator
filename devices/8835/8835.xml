@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="36" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>8836</objid>
+    <name>PING</name>
+   </item>
+   <item>
+    <objid>8837</objid>
+    <name>Uptime</name>
+   </item>
+   <item>
+    <objid>8838</objid>
+    <name>CPU Load</name>
+   </item>
+   <item>
+    <objid>8839</objid>
+    <name>System Health CPU</name>
+   </item>
+   <item>
+    <objid>8840</objid>
+    <name>System Health Memory</name>
+   </item>
+   <item>
+    <objid>8841</objid>
+    <name>System Health Fans</name>
+   </item>
+   <item>
+    <objid>8842</objid>
+    <name>System Health Power Supplies</name>
+   </item>
+   <item>
+    <objid>8843</objid>
+    <name>(001) Vlan1 Traffic</name>
+   </item>
+   <item>
+    <objid>8873</objid>
+    <name>system/sys descr</name>
+   </item>
+   <item>
+    <objid>8874</objid>
+    <name>system/sys name</name>
+   </item>
+   <item>
+    <objid>8875</objid>
+    <name>Traceroute Hop Count 1</name>
+   </item>
+   <item>
+    <objid>8876</objid>
+    <name>cisco env monmibnotification enables/cisco env mon enable temperature notification</name>
+   </item>
+   <item>
+    <objid>8908</objid>
+    <name>(10101) GigabitEthernet0/1 Traffic</name>
+   </item>
+   <item>
+    <objid>8909</objid>
+    <name>(10102) GigabitEthernet0/2 Traffic</name>
+   </item>
+   <item>
+    <objid>8910</objid>
+    <name>(10103) GigabitEthernet0/3 Traffic</name>
+   </item>
+   <item>
+    <objid>8911</objid>
+    <name>(10104) GigabitEthernet0/4 Traffic</name>
+   </item>
+   <item>
+    <objid>8912</objid>
+    <name>(10105) GigabitEthernet0/5 Traffic</name>
+   </item>
+   <item>
+    <objid>8913</objid>
+    <name>(10106) GigabitEthernet0/6 Traffic</name>
+   </item>
+   <item>
+    <objid>8914</objid>
+    <name>(10107) GigabitEthernet0/7 Traffic</name>
+   </item>
+   <item>
+    <objid>8915</objid>
+    <name>(10108) GigabitEthernet0/8 Traffic</name>
+   </item>
+   <item>
+    <objid>8916</objid>
+    <name>(10109) GigabitEthernet0/9 Traffic</name>
+   </item>
+   <item>
+    <objid>8917</objid>
+    <name>(10110) GigabitEthernet0/10 Traffic</name>
+   </item>
+   <item>
+    <objid>8918</objid>
+    <name>(10111) GigabitEthernet0/11 Traffic</name>
+   </item>
+   <item>
+    <objid>8919</objid>
+    <name>(10112) GigabitEthernet0/12 Traffic</name>
+   </item>
+   <item>
+    <objid>8920</objid>
+    <name>(10113) GigabitEthernet0/13 Traffic</name>
+   </item>
+   <item>
+    <objid>8921</objid>
+    <name>(10114) GigabitEthernet0/14 Traffic</name>
+   </item>
+   <item>
+    <objid>8922</objid>
+    <name>(10115) GigabitEthernet0/15 Traffic</name>
+   </item>
+   <item>
+    <objid>8923</objid>
+    <name>(10116) GigabitEthernet0/16 Traffic</name>
+   </item>
+   <item>
+    <objid>8924</objid>
+    <name>(10117) GigabitEthernet0/17 Traffic</name>
+   </item>
+   <item>
+    <objid>8925</objid>
+    <name>(10118) GigabitEthernet0/18 Traffic</name>
+   </item>
+   <item>
+    <objid>8926</objid>
+    <name>(10119) GigabitEthernet0/19 Traffic</name>
+   </item>
+   <item>
+    <objid>8927</objid>
+    <name>(10120) GigabitEthernet0/20 Traffic</name>
+   </item>
+   <item>
+    <objid>8928</objid>
+    <name>(10121) GigabitEthernet0/21 Traffic</name>
+   </item>
+   <item>
+    <objid>8929</objid>
+    <name>(10122) GigabitEthernet0/22 Traffic</name>
+   </item>
+   <item>
+    <objid>8930</objid>
+    <name>(10123) GigabitEthernet0/23 Traffic</name>
+   </item>
+   <item>
+    <objid>8931</objid>
+    <name>(10124) GigabitEthernet0/24 Traffic</name>
+   </item>
+  </sensor>

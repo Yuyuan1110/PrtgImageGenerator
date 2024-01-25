@@ -15,6 +15,7 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -41,7 +42,9 @@ public class XMLDownloadImpl implements XMLDownload {
         try (InputStream in = connection.getInputStream();
              InputStreamReader isr = new InputStreamReader(in);
              BufferedReader bf = new BufferedReader(isr);
-             FileOutputStream fileOutputStream = new FileOutputStream(path)
+             FileOutputStream fileOutputStream = new FileOutputStream(path);
+             OutputStreamWriter writer = new OutputStreamWriter(fileOutputStream, StandardCharsets.UTF_8)
+
         ) {
             StringBuilder response = new StringBuilder();
             String line;
@@ -49,7 +52,7 @@ public class XMLDownloadImpl implements XMLDownload {
                 response.append(line).append(System.lineSeparator());
             }
 
-            fileOutputStream.write(response.toString().getBytes());
+            writer.write(response.toString());
             System.out.println("Response written to file: " + path);
         } catch (IOException e) {
             throw new RuntimeException(e);

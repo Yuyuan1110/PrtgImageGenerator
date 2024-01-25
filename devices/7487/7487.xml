@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="6" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>7488</objid>
+    <name>Ping 11</name>
+   </item>
+   <item>
+    <objid>7489</objid>
+    <name>(002) ens192 Traffic</name>
+   </item>
+   <item>
+    <objid>7490</objid>
+    <name>(003) ens224 Traffic</name>
+   </item>
+   <item>
+    <objid>7491</objid>
+    <name>(004) ens256 Traffic</name>
+   </item>
+   <item>
+    <objid>7492</objid>
+    <name>HTTP Push Count</name>
+   </item>
+   <item>
+    <objid>7493</objid>
+    <name>CPU Usage</name>
+   </item>
+  </sensor>

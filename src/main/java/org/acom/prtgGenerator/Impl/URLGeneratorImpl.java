@@ -26,7 +26,7 @@ public class URLGeneratorImpl implements URLGenerator {
 //            System.out.println(hides);
             URL url = new URL(configBean.getProtocol() + "://" + configBean.getServerIP() + ":" + configBean.getPort() + "/chart.png?graphid=-1" + "&id=" + graphBean.getId()+ "&sdate=" + graphBean.getStartDate() + "&edate=" + graphBean.getEndDate()+ "&avg=" + graphBean.getAvg()+ "&graphstyling=" + graphBean.getGraphStyling()
                      + "&hide="+hides + "&width=" + graphBean.getWidth() + "&height=" + graphBean.getHeight()
-                    + "&username=" + configBean.getUsername() + "&password=" + configBean.getPassword());
+                    + "&username=" + configBean.getUsername() + "&password=" + configBean.getPassword()+"&bgcolor=%23FCFCFC");
 //            graphid=-1&graphstyling=baseFontSize%3D%2710%27%20showLegend%3D%271%27&id=7877&avg=86400&sdate=2023-01-01-17-38-00&edate=2023-10-01-23-59-00&hide=-4
 //            &width=850&height=270&username=acom&password=Aa1234567890
 

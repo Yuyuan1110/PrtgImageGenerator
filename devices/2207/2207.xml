@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="2" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>2920</objid>
+    <name>Cloudwatch CacheClusterId/CacheNodeId: zucast-web/0001 [ElastiCache]</name>
+   </item>
+   <item>
+    <objid>2921</objid>
+    <name>Cloudwatch CacheClusterId: zucast-web [ElastiCache]</name>
+   </item>
+  </sensor>

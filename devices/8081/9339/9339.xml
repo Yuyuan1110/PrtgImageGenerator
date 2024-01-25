@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <channels totalcount="0" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>-4</objid>
+    <objid_raw>*000000004</objid_raw>
+    <name>Downtime</name>
+   </item>
+   <item>
+    <objid>2</objid>
+    <objid_raw>0000000002</objid_raw>
+    <name>Days to Expiration</name>
+   </item>
+   <item>
+    <objid>3</objid>
+    <objid_raw>0000000003</objid_raw>
+    <name>Root Authority Trusted</name>
+   </item>
+   <item>
+    <objid>4</objid>
+    <objid_raw>0000000004</objid_raw>
+    <name>Revoked</name>
+   </item>
+   <item>
+    <objid>5</objid>
+    <objid_raw>0000000005</objid_raw>
+    <name>Public Key Length</name>
+   </item>
+   <item>
+    <objid>6</objid>
+    <objid_raw>0000000006</objid_raw>
+    <name>Self-Signed</name>
+   </item>
+   <item>
+    <objid>7</objid>
+    <objid_raw>0000000007</objid_raw>
+    <name>Common Name Check</name>
+   </item>
+  </channels>

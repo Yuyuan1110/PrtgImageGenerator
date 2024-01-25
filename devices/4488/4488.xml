@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="43" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>4489</objid>
+    <name>PING</name>
+   </item>
+   <item>
+    <objid>4492</objid>
+    <name>Uptime</name>
+   </item>
+   <item>
+    <objid>4504</objid>
+    <name>System Health CPU</name>
+   </item>
+   <item>
+    <objid>4505</objid>
+    <name>System Health Memory</name>
+   </item>
+   <item>
+    <objid>4506</objid>
+    <name>System Health Fans</name>
+   </item>
+   <item>
+    <objid>4507</objid>
+    <name>System Health Power Supplies</name>
+   </item>
+   <item>
+    <objid>4508</objid>
+    <name>CPU Load</name>
+   </item>
+   <item>
+    <objid>5377</objid>
+    <name>(10101) GigabitEthernet0/1 Traffic(vlan1 to fortigate60d)</name>
+   </item>
+   <item>
+    <objid>5378</objid>
+    <name>(10102) GigabitEthernet0/2 Traffic (PRTG)</name>
+   </item>
+   <item>
+    <objid>5379</objid>
+    <name>(10103) GigabitEthernet0/3 Traffic (VMWare)</name>
+   </item>
+   <item>
+    <objid>5380</objid>
+    <name>(10104) GigabitEthernet0/4 Traffic</name>
+   </item>
+   <item>
+    <objid>5381</objid>
+    <name>(10105) GigabitEthernet0/5 Traffic</name>
+   </item>
+   <item>
+    <objid>5382</objid>
+    <name>(10106) GigabitEthernet0/6 Traffic</name>
+   </item>
+   <item>
+    <objid>5383</objid>
+    <name>(10107) GigabitEthernet0/7 Traffic</name>
+   </item>
+   <item>
+    <objid>5384</objid>
+    <name>(10108) GigabitEthernet0/8 Traffic</name>
+   </item>
+   <item>
+    <objid>5385</objid>
+    <name>(10109) GigabitEthernet0/9 Traffic(WIFI AP)</name>
+   </item>
+   <item>
+    <objid>5386</objid>
+    <name>(10110) GigabitEthernet0/10 Traffic</name>
+   </item>
+   <item>
+    <objid>5387</objid>
+    <name>(10111) GigabitEthernet0/11 Traffic</name>
+   </item>
+   <item>
+    <objid>5388</objid>
+    <name>(10112) GigabitEthernet0/12 Traffic</name>
+   </item>
+   <item>
+    <objid>5389</objid>
+    <name>(10113) GigabitEthernet0/13 Traffic</name>
+   </item>
+   <item>
+    <objid>5390</objid>
+    <name>(10114) GigabitEthernet0/14 Traffic</name>
+   </item>
+   <item>
+    <objid>5391</objid>
+    <name>(10115) GigabitEthernet0/15 Traffic</name>
+   </item>
+   <item>
+    <objid>5392</objid>
+    <name>(10116) GigabitEthernet0/16 Traffic</name>
+   </item>
+   <item>
+    <objid>5393</objid>
+    <name>(10117) GigabitEthernet0/17 Traffic</name>
+   </item>
+   <item>
+    <objid>5394</objid>
+    <name>(10118) GigabitEthernet0/18 Traffic</name>
+   </item>
+   <item>
+    <objid>5395</objid>
+    <name>(10119) GigabitEthernet0/19 Traffic</name>
+   </item>
+   <item>
+    <objid>5396</objid>
+    <name>(10120) GigabitEthernet0/20 Traffic</name>
+   </item>
+   <item>
+    <objid>5397</objid>
+    <name>(10121) GigabitEthernet0/21 Traffic</name>
+   </item>
+   <item>
+    <objid>5398</objid>
+    <name>(10122) GigabitEthernet0/22 Traffic(Internet)</name>
+   </item>
+   <item>
+    <objid>5399</objid>
+    <name>(10123) GigabitEthernet0/23 Traffic(FortiGate60D)</name>
+   </item>
+   <item>
+    <objid>5400</objid>
+    <name>(10124) GigabitEthernet0/24 Traffic(Internet)</name>
+   </item>
+   <item>
+    <objid>5401</objid>
+    <name>(10125) GigabitEthernet0/25 Traffic</name>
+   </item>
+   <item>
+    <objid>5402</objid>
+    <name>(10126) GigabitEthernet0/26 Traffic</name>
+   </item>
+   <item>
+    <objid>5403</objid>
+    <name>(10127) GigabitEthernet0/27 Traffic</name>
+   </item>
+   <item>
+    <objid>5404</objid>
+    <name>(10128) GigabitEthernet0/28 Traffic</name>
+   </item>
+   <item>
+    <objid>5406</objid>
+    <name>(001) Vlan1 Traffic</name>
+   </item>
+   <item>
+    <objid>5407</objid>
+    <name>(100) ADSL Traffic</name>
+   </item>
+   <item>
+    <objid>5507</objid>
+    <name>system/sys descr</name>
+   </item>
+   <item>
+    <objid>5510</objid>
+    <name>system/sys name</name>
+   </item>
+   <item>
+    <objid>5574</objid>
+    <name>Traceroute Hop Count 1</name>
+   </item>
+   <item>
+    <objid>5593</objid>
+    <name>cisco env monmibnotification enables/cisco env mon enable temperature notification</name>
+   </item>
+   <item>
+    <objid>5616</objid>
+    <name>Sensor Fatory</name>
+   </item>
+   <item>
+    <objid>5947</objid>
+    <name>Sensor Factory 1</name>
+   </item>
+  </sensor>

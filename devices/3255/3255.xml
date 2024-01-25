@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="10" listend="1">
+   <prtg-version>16.1.21.1422</prtg-version>
+   <item>
+    <objid>3256</objid>
+    <name>PING</name>
+   </item>
+   <item>
+    <objid>3259</objid>
+    <name>Uptime</name>
+   </item>
+   <item>
+    <objid>3260</objid>
+    <name>(001) LOOPBACK Traffic</name>
+   </item>
+   <item>
+    <objid>3261</objid>
+    <name>(003) wifi0 Traffic</name>
+   </item>
+   <item>
+    <objid>3262</objid>
+    <name>(004) wifiUAP Traffic</name>
+   </item>
+   <item>
+    <objid>3266</objid>
+    <name>Pages Printed Difference</name>
+   </item>
+   <item>
+    <objid>3267</objid>
+    <name>Pages Printed Total</name>
+   </item>
+   <item>
+    <objid>3268</objid>
+    <name>Toner/Status</name>
+   </item>
+   <item>
+    <objid>3269</objid>
+    <name>Paper/Status</name>
+   </item>
+   <item>
+    <objid>3270</objid>
+    <name>Jam/Status</name>
+   </item>
+  </sensor>
