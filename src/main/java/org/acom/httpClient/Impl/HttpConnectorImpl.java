@@ -4,9 +4,7 @@ import org.acom.Exception.CannotDetectServerException;
 import org.acom.beans.ConfigBean;
 import org.acom.httpClient.HttpConnector;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 

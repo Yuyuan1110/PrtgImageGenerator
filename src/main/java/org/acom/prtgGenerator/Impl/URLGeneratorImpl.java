@@ -18,13 +18,9 @@ public class URLGeneratorImpl implements URLGenerator {
     @Override
     public URL GraphURLGenerator(GraphBean graphBean) {
         try {
-            String hides = graphBean.getHide()[0];
+            String hides = String.join(",", graphBean.getHide());
 
-            for (int i = 1; i < graphBean.getHide().length; i++) {
-                hides += ","+graphBean.getHide()[i];
-            }
-//            System.out.println(hides);
-            URL url = new URL(configBean.getProtocol() + "://" + configBean.getServerIP() + ":" + configBean.getPort() + "/chart.png?graphid=-1" + "&id=" + graphBean.getId()+ "&sdate=" + graphBean.getStartDate() + "&edate=" + graphBean.getEndDate()+ "&avg=" + graphBean.getAvg()+ "&graphstyling=" + graphBean.getGraphStyling()
+            URL url = new URL(configBean.getFullServerIP() + "chart.png?graphid=-1" + "&id=" + graphBean.getId()+ "&sdate=" + graphBean.getStartDate() + "&edate=" + graphBean.getEndDate()+ "&avg=" + graphBean.getAvg()+ "&graphstyling=" + graphBean.getGraphStyling()
                      + "&hide="+hides + "&width=" + graphBean.getWidth() + "&height=" + graphBean.getHeight()
                     + "&username=" + configBean.getUsername() + "&password=" + configBean.getPassword()+"&bgcolor=%23FCFCFC");
 //            graphid=-1&graphstyling=baseFontSize%3D%2710%27%20showLegend%3D%271%27&id=7877&avg=86400&sdate=2023-01-01-17-38-00&edate=2023-10-01-23-59-00&hide=-4
@@ -43,10 +39,12 @@ public class URLGeneratorImpl implements URLGenerator {
             case "device":
                 return new URL(configBean.getFullServerIP() + "api/table.xml?content=devices&columns=objid,name&username=" + configBean.getUsername() + "&password=" + configBean.getPassword());
             case "sensor":
-
                 return new URL(configBean.getFullServerIP() + "api/table.xml?content=sensor&columns=objid,name&username=" + configBean.getUsername() + "&password=" + configBean.getPassword() + "&id=" + objId);
             case "channel":
                 return new URL(configBean.getFullServerIP() + "api/table.xml?noraw=1&content=channels&columns=objid,name&username=" + configBean.getUsername() + "&password=" + configBean.getPassword() + "&id=" + objId);
+            case "json":
+                return new URL(configBean.getFullServerIP() + "api/table.json?noraw=1&content=channels&columns=objid,name&username=" + configBean.getUsername() + "&password=" + configBean.getPassword() + "&id=" + objId);
+
             default:
                 return null;
         }

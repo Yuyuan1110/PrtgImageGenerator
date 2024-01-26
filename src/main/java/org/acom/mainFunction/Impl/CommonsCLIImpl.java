@@ -5,23 +5,36 @@ import org.apache.commons.cli.*;
 
 public class CommonsCLIImpl implements CommonsCLI {
     @Override
-    public CommandLine getCommonsCLI(String[] args) throws ParseException {
+    public CommandLine getCommonsCLI(String[] args) {
         Options options = new Options();
         options.addOption("f", "feature",true, "Feature: graphic/history");
         options.addOption("s", "sdate",true, "Start date, format: \"yyyy-MM-dd-HH-mm-ss\"");
         options.addOption("e", "edate",true, "End date, format: \"yyyy-MM-dd-HH-mm-ss\"");
         options.addOption("r", "rebuild",false, "Re-build the \"settings.xml\" file.");
-        options.addOption("H", "hide",false, "set the hide data.");
+//        options.addOption("H", "hide",true, "set the hide data.");
         options.addOption("id",true, "Get data from specific device ID.");
+        options.addOption("h", "help", false, "help");
         CommandLineParser parser = new DefaultParser();
-        CommandLine cmd = parser.parse(options, args);
-        if(!cmd.hasOption("f") && !cmd.hasOption("feature") && !cmd.hasOption("r") && !cmd.hasOption("rebuild")){
-            System.out.println("Required \"-f\" or \"--feature\" argument to specify config file.");
-            System.exit(-1);
+        CommandLine cmd = null;
+        try {
+            cmd = parser.parse(options, args);
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
         }
-
+        if(cmd.hasOption("help") || cmd.hasOption("h")){
+            help();
+        }
+        if(cmd.hasOption("f"))
         return cmd;
     }
 
+    private void help(){
+        System.out.println("HOW TO USED: ");
+        System.out.println("[-f] [--feature]: set feature. \nNeed type parameter: \n\"graphic\" to download history graphic \n\"history\" to download history data. \n\"rebuild\" to rebuild settings.xml file.");
+        System.out.println("[-s] [--sdate]: set query start date, format to \"yyyy-MM-dd-HH-mm-ss\"");
+        System.out.println("[-e] [--edate]: set query end date, format to \"yyyy-MM-dd-HH-mm-ss\"");
+        System.out.println("\nCOMMAND: java -jar PRTG_Generator.jar -f [graph/history] --[start date] --[end date] \nNOTE: date format to \"yyyy-MM-dd-HH-mm-ss\"\n");
+        System.exit(0);
+    }
 
 }

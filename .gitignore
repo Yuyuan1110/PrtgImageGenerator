@@ -20,9 +20,7 @@ target/
 .settings
 .springBeans
 .sts4-cache
-./devices
-./graph
-./history
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
@@ -35,6 +33,8 @@ build/
 
 ### VS Code ###
 .vscode/
-
+./devices/
+./graph/
+./history/
 ### Mac OS ###
 .DS_Store

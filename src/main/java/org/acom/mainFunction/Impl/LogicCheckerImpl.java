@@ -1,8 +1,5 @@
 package org.acom.mainFunction.Impl;
 
-import org.acom.Exception.FileMissingException;
-import org.acom.Exception.InvalidDateException;
-import org.acom.beans.ConfigBean;
 import org.acom.configReader.Impl.ConfigReaderImpl;
 import org.acom.mainFunction.LogicChecker;
 import org.acom.prtgGenerator.Impl.PRTGGeneratorImpl;
@@ -14,11 +11,9 @@ import org.acom.prtgGenerator.URLGenerator;
 import org.acom.prtgGenerator.XMLDownload;
 import org.acom.prtgGenerator.XMLGenerator;
 import org.apache.commons.cli.CommandLine;
-import org.w3c.dom.ls.LSOutput;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
 
@@ -27,6 +22,7 @@ public class LogicCheckerImpl implements LogicChecker {
     private static final Scanner scanner = new Scanner(System.in);
     private static final URLGenerator urlGenerator = new URLGeneratorImpl();
     private static final String devicePath = "." + File.separator + "devices" + File.separator + "devices.xml";
+    private static final PRTGGenerator prtgGenerator = new PRTGGeneratorImpl();
     @Override
     public void configFileExistsChecker() {
 
@@ -44,7 +40,49 @@ public class LogicCheckerImpl implements LogicChecker {
         }
     }
 
+    @Override
+    public void featureGraphic(CommandLine cmd) {
 
+        if(cmd.hasOption("id")){
+            System.out.println("Start to download graphic since \""+cmd.getOptionValue("s")+"\" to \"" + cmd.getOptionValue("e")+"\", id: " + cmd.getOptionValue("id")+" ? [y/N]");
+            String tmp = scanner.nextLine();
+            if(tmp.equalsIgnoreCase("y") || tmp.equalsIgnoreCase("yes")){
+                prtgGenerator.graphSingleDownload(cmd.getOptionValue("s"), cmd.getOptionValue("e"), cmd.getOptionValue("id"));
+            }
+            System.exit(0);
+        }
+
+
+        System.out.println("Start to download graphic since \""+cmd.getOptionValue("s")+"\" to \"" + cmd.getOptionValue("e")+ "\" ? [y/N]");
+
+        String tmp = scanner.nextLine();
+        if(tmp.equalsIgnoreCase("y") || tmp.equalsIgnoreCase("yes")){
+            prtgGenerator.graphDownload(cmd.getOptionValue("s"), cmd.getOptionValue("e"));
+        } else {
+            System.out.println("bye bye!");
+            System.exit(0);
+        }
+    }
+
+    @Override
+    public void featureHistory(CommandLine cmd) {
+        System.out.println("Start to download history file, xml or csv? [xml/csv] default: xml");
+        if(!scanner.nextLine().equalsIgnoreCase("csv")){
+            prtgGenerator.historyDownload(cmd.getOptionValue("s"), cmd.getOptionValue("e"), "xml");
+        } else{
+            prtgGenerator.historyDownload(cmd.getOptionValue("s"), cmd.getOptionValue("e"), "csv");
+        }
+        System.exit(0);
+    }
+
+    @Override
+    public void featureRebuild(CommandLine cmd) {
+        System.out.println("start to re-build the \"settings.xml\" file.");
+        XMLGenerator xmlGenerator = new XMLGeneratorImpl();
+        xmlGenerator.settingsXMLGenerator();
+        System.out.println("re-build completed, please check the file content.");
+        System.exit(0);
+    }
 
 
     private void buildSettingXMLChecker() {

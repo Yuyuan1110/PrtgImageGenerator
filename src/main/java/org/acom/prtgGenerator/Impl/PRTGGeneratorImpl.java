@@ -1,5 +1,7 @@
 package org.acom.prtgGenerator.Impl;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.acom.Exception.InvalidDateException;
 import org.acom.beans.GraphBean;
 import org.acom.beans.HistoryBean;
@@ -17,9 +19,11 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.*;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Scanner;
 
 public class PRTGGeneratorImpl implements PRTGGenerator {
     private final URLGenerator urlGenerator = new URLGeneratorImpl();
@@ -33,7 +37,6 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
 
     @Override
     public void graphDownload(String sdate, String edate) {
-
 
         new File(graphPath).mkdir();
 
@@ -90,6 +93,43 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
             }
         } catch (ParserConfigurationException | IOException | SAXException | InvalidDateException e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void graphSingleDownload(String sdate, String edate, String id) {
+
+        try {
+            gb.setStartDate(sdate);
+            gb.setEndDate(edate);
+            gb.setId(Integer.parseInt(id));
+            URL url = urlGenerator.XMLURLGenerator("json", id);
+            connection = new HttpConnectorImpl().setConnection(url);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            String line;
+            StringBuilder response = new StringBuilder();
+
+            while ((line = reader.readLine()) != null) {
+                response.append(line);
+            }
+            ObjectMapper objectMapper = new ObjectMapper();
+            JsonNode jsonNode = objectMapper.readTree(response.toString());
+            System.out.println("Type channel id if show ot in graphic. e.g.: 0,1,2");
+            for (JsonNode channel : jsonNode.get("channels")) {
+                System.out.println("Channel ID: "+ channel.get("objid"));
+                System.out.println("Channel name: "+ channel.get("name"));
+                System.out.println("\n--------------------");
+            }
+            Scanner scanner = new Scanner(System.in);
+            String tmp = scanner.nextLine();
+            gb.setHide(tmp.split(","));
+            URL graphUrl = urlGenerator.GraphURLGenerator(gb);
+            downLoadImage(graphUrl, graphPath + File.separator + id + ".png");
+
+
+        } catch (InvalidDateException | IOException e) {
+            throw new RuntimeException(e);
+        } finally {
         }
     }
 

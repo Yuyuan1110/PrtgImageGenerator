@@ -104,7 +104,7 @@ public class XMLDownloadImpl implements XMLDownload {
         Document deviceXML = builder.parse(new File(devicesPath + File.separator + "devices.xml"));
         Element rootElement = deviceXML.getDocumentElement();
         NodeList itemList = rootElement.getElementsByTagName("item");
-        //download every devices each xml.
+
         for (int i = 0; i < itemList.getLength(); i++) {
             Element itemElement = (Element) itemList.item(i);
             String objidValue = itemElement.getElementsByTagName("objid").item(0).getTextContent();
