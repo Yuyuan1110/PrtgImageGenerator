@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="4" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>48515</objid>
+    <name>每日訊務處理統計(EAPSIM)</name>
+   </item>
+   <item>
+    <objid>52644</objid>
+    <name>每日訊務處理統計(含認證成功比率)</name>
+   </item>
+   <item>
+    <objid>53089</objid>
+    <name>EAP-SIM認證成功率</name>
+   </item>
+   <item>
+    <objid>61217</objid>
+    <name>EAP-SIM Auth report</name>
+   </item>
+  </sensor>

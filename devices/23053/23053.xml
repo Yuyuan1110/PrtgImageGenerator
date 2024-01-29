@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="16" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>23056</objid>
+    <name>PING 1</name>
+   </item>
+   <item>
+    <objid>59034</objid>
+    <name>SNMP CPU Load</name>
+   </item>
+   <item>
+    <objid>59035</objid>
+    <name>Disk Free: /</name>
+   </item>
+   <item>
+    <objid>59036</objid>
+    <name>Disk Free: /dev/shm</name>
+   </item>
+   <item>
+    <objid>59037</objid>
+    <name>Disk Free: /run</name>
+   </item>
+   <item>
+    <objid>59038</objid>
+    <name>Disk Free: /sys/fs/cgroup</name>
+   </item>
+   <item>
+    <objid>59039</objid>
+    <name>Disk Free: /home</name>
+   </item>
+   <item>
+    <objid>59040</objid>
+    <name>Disk Free: /run/user/0</name>
+   </item>
+   <item>
+    <objid>59043</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>59044</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>59045</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+   <item>
+    <objid>59046</objid>
+    <name>(001) lo Traffic</name>
+   </item>
+   <item>
+    <objid>59047</objid>
+    <name>(002) eno1 Traffic</name>
+   </item>
+   <item>
+    <objid>59048</objid>
+    <name>(003) eno2 Traffic</name>
+   </item>
+   <item>
+    <objid>59049</objid>
+    <name>(009) bond0 Traffic</name>
+   </item>
+   <item>
+    <objid>59050</objid>
+    <name>SNMP System Uptime</name>
+   </item>
+  </sensor>

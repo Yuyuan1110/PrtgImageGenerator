@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <channels totalcount="0" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>-4</objid>
+    <objid_raw>*000000004</objid_raw>
+    <name>Downtime</name>
+   </item>
+   <item>
+    <objid>2</objid>
+    <objid_raw>0000000002</objid_raw>
+    <name>Global System Status</name>
+   </item>
+   <item>
+    <objid>3</objid>
+    <objid_raw>0000000003</objid_raw>
+    <name>Chassis Status</name>
+   </item>
+   <item>
+    <objid>4</objid>
+    <objid_raw>0000000004</objid_raw>
+    <name>Power Supply Status</name>
+   </item>
+   <item>
+    <objid>5</objid>
+    <objid_raw>0000000005</objid_raw>
+    <name>Voltage Status</name>
+   </item>
+   <item>
+    <objid>6</objid>
+    <objid_raw>0000000006</objid_raw>
+    <name>Ampere Status</name>
+   </item>
+   <item>
+    <objid>7</objid>
+    <objid_raw>0000000007</objid_raw>
+    <name>Cooling Device Status</name>
+   </item>
+   <item>
+    <objid>8</objid>
+    <objid_raw>0000000008</objid_raw>
+    <name>Temperature Status</name>
+   </item>
+   <item>
+    <objid>9</objid>
+    <objid_raw>0000000009</objid_raw>
+    <name>Memory Device Status</name>
+   </item>
+   <item>
+    <objid>10</objid>
+    <objid_raw>0000000010</objid_raw>
+    <name>Intrusion Status</name>
+   </item>
+   <item>
+    <objid>11</objid>
+    <objid_raw>0000000011</objid_raw>
+    <name>Power Unit Status</name>
+   </item>
+   <item>
+    <objid>12</objid>
+    <objid_raw>0000000012</objid_raw>
+    <name>Cooling Unit Status</name>
+   </item>
+   <item>
+    <objid>13</objid>
+    <objid_raw>0000000013</objid_raw>
+    <name>Processor Status</name>
+   </item>
+   <item>
+    <objid>14</objid>
+    <objid_raw>0000000014</objid_raw>
+    <name>Battery Status</name>
+   </item>
+  </channels>

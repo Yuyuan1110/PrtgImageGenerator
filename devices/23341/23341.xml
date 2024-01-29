@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="3" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>23406</objid>
+    <name>企業用戶CDR筆數統計</name>
+   </item>
+   <item>
+    <objid>23407</objid>
+    <name>預付卡CDR筆數統計</name>
+   </item>
+   <item>
+    <objid>32394</objid>
+    <name>漫遊CDR筆數統計</name>
+   </item>
+  </sensor>

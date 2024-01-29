@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="10" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>25002</objid>
+    <name>SNMP 系統正常執行時間</name>
+   </item>
+   <item>
+    <objid>25049</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 3 KVH6UA1J</name>
+   </item>
+   <item>
+    <objid>25050</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 1 KVH6UB0J</name>
+   </item>
+   <item>
+    <objid>25052</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 7 KVH6UPMJ</name>
+   </item>
+   <item>
+    <objid>25053</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 2 KVH79VKJ</name>
+   </item>
+   <item>
+    <objid>25054</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 6 S3L2N7MN0000M6240B3C</name>
+   </item>
+   <item>
+    <objid>56470</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 4 KPHB9YJF</name>
+   </item>
+   <item>
+    <objid>56471</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 5 KPKXBVAF</name>
+   </item>
+   <item>
+    <objid>57823</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 8 KPXEAAVR</name>
+   </item>
+   <item>
+    <objid>62872</objid>
+    <name>SNMP HPE ProLiant System Health</name>
+   </item>
+  </sensor>

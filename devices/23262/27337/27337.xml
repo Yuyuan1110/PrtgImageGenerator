@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <channels totalcount="0" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>-4</objid>
+    <objid_raw>*000000004</objid_raw>
+    <name>下線時間</name>
+   </item>
+   <item>
+    <objid>0</objid>
+    <objid_raw>0000000000</objid_raw>
+    <name>EAP-SIM_ACCT01</name>
+   </item>
+   <item>
+    <objid>1</objid>
+    <objid_raw>0000000001</objid_raw>
+    <name>EAP-SIM_ACCT02</name>
+   </item>
+   <item>
+    <objid>2</objid>
+    <objid_raw>0000000002</objid_raw>
+    <name>UAM_AAAR3</name>
+   </item>
+   <item>
+    <objid>3</objid>
+    <objid_raw>0000000003</objid_raw>
+    <name>UAM_AAAR4</name>
+   </item>
+   <item>
+    <objid>4</objid>
+    <objid_raw>0000000004</objid_raw>
+    <name>UAM_AAAR5</name>
+   </item>
+  </channels>

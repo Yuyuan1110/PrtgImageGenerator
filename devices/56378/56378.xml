@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="12" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>56379</objid>
+    <name>(002) eth0 Traffic</name>
+   </item>
+   <item>
+    <objid>56380</objid>
+    <name>(003) eth1 Traffic</name>
+   </item>
+   <item>
+    <objid>56381</objid>
+    <name>(006) bond0 Traffic</name>
+   </item>
+   <item>
+    <objid>56382</objid>
+    <name>Ping</name>
+   </item>
+   <item>
+    <objid>56383</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>56384</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>56385</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+   <item>
+    <objid>56386</objid>
+    <name>Disk Free: /</name>
+   </item>
+   <item>
+    <objid>56387</objid>
+    <name>Disk Free: /dev/shm</name>
+   </item>
+   <item>
+    <objid>56388</objid>
+    <name>Disk Free: /boot</name>
+   </item>
+   <item>
+    <objid>56389</objid>
+    <name>Disk Free: /home</name>
+   </item>
+   <item>
+    <objid>56390</objid>
+    <name>SNMP CPU Load</name>
+   </item>
+  </sensor>

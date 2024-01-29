@@ -1,72 +1,260 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <devices totalcount="17" listend="1">
-   <prtg-version>16.1.21.1422</prtg-version>
+  <devices totalcount="64" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
    <item>
-    <objid>2606</objid>
-    <name>FortiGate 60D</name>
+    <objid>22707</objid>
+    <name>EAP-SIM-PROXY01</name>
    </item>
    <item>
-    <objid>2607</objid>
-    <name>Cisco Router (C1841)</name>
+    <objid>22722</objid>
+    <name>EAP-SIM-PROXY02</name>
    </item>
    <item>
-    <objid>3255</objid>
-    <name>HP LaserJet 200 colorMFP M276nw(E62245)</name>
+    <objid>22737</objid>
+    <name>EAP-SIM-AAA01</name>
    </item>
    <item>
-    <objid>4880</objid>
-    <name>DPAP_192.168.0.90</name>
+    <objid>22752</objid>
+    <name>EAP-SIM-AAA02</name>
    </item>
    <item>
-    <objid>5370</objid>
-    <name>SMS Probe TPE</name>
+    <objid>22767</objid>
+    <name>EAP-SIM-AAA03</name>
    </item>
    <item>
-    <objid>5410</objid>
-    <name>SMS Probe TC</name>
+    <objid>22782</objid>
+    <name>EAP-SIM-ACCT01</name>
    </item>
    <item>
-    <objid>5792</objid>
-    <name>[1] AAA01 (192.168.0.211)</name>
+    <objid>22797</objid>
+    <name>EAP-SIM-ACCT02</name>
    </item>
    <item>
-    <objid>5801</objid>
-    <name>[2] Stress01 (192.168.0.202)</name>
+    <objid>22812</objid>
+    <name>EAP-SIM SS7GW01</name>
    </item>
    <item>
-    <objid>5809</objid>
-    <name>[3] AAA02 (192.168.0.216)</name>
+    <objid>22835</objid>
+    <name>EAP-SIM SS7GW02</name>
    </item>
    <item>
-    <objid>6149</objid>
-    <name>Test VM DO</name>
+    <objid>22856</objid>
+    <name>EAP-SIM SS7GW03</name>
    </item>
    <item>
-    <objid>7189</objid>
-    <name>nominum cacheserve(192.168.0.21)</name>
+    <objid>22877</objid>
+    <name>EAP-SIM-CDR</name>
    </item>
    <item>
-    <objid>7856</objid>
-    <name>CubeBackup(192.168.0.18</name>
+    <objid>22881</objid>
+    <name>CDR01</name>
    </item>
    <item>
-    <objid>7875</objid>
-    <name>HP Color LaserJet Pro M478f-9w</name>
+    <objid>22915</objid>
+    <name>EAP-SIM SMP</name>
    </item>
    <item>
-    <objid>8150</objid>
-    <name>192.168.0.98 (Proxmox VE (iDrac)) [Dell Server]</name>
+    <objid>23048</objid>
+    <name>EAP-SIM OTA01</name>
    </item>
    <item>
-    <objid>8988</objid>
-    <name>ACOM-KMSP</name>
+    <objid>23049</objid>
+    <name>EAP-SIM OTA02</name>
    </item>
    <item>
-    <objid>8992</objid>
-    <name>TrueNAS/NextCloud</name>
+    <objid>23053</objid>
+    <name>EAPSIM-IMSI</name>
    </item>
    <item>
-    <objid>9090</objid>
-    <name>Finance-THINK</name>
+    <objid>23097</objid>
+    <name>EAP-SIM FC01</name>
+   </item>
+   <item>
+    <objid>23112</objid>
+    <name>UAM_AAAR3</name>
+   </item>
+   <item>
+    <objid>23180</objid>
+    <name>UAM_AAAR4</name>
+   </item>
+   <item>
+    <objid>23181</objid>
+    <name>UAM_AAAR5</name>
+   </item>
+   <item>
+    <objid>23201</objid>
+    <name>UAM-USSDGW</name>
+   </item>
+   <item>
+    <objid>23260</objid>
+    <name>WiFi加價購每日用戶數統計(Proxy02)</name>
+   </item>
+   <item>
+    <objid>23262</objid>
+    <name>每日CDR資料分析</name>
+   </item>
+   <item>
+    <objid>23263</objid>
+    <name>SS7GW03</name>
+   </item>
+   <item>
+    <objid>23278</objid>
+    <name>預付卡5397每日啟用EAP-SIM人數統計</name>
+   </item>
+   <item>
+    <objid>23341</objid>
+    <name>CDR 統計分析</name>
+   </item>
+   <item>
+    <objid>23409</objid>
+    <name>EAP-SIM-OTA01</name>
+   </item>
+   <item>
+    <objid>23446</objid>
+    <name>介接監測[OSF](AAA02)</name>
+   </item>
+   <item>
+    <objid>24847</objid>
+    <name>EAP-SIM-OTA02</name>
+   </item>
+   <item>
+    <objid>24935</objid>
+    <name>SS7GW02</name>
+   </item>
+   <item>
+    <objid>24947</objid>
+    <name>SS7GW01</name>
+   </item>
+   <item>
+    <objid>24958</objid>
+    <name>EAP-SIM_CDR01</name>
+   </item>
+   <item>
+    <objid>24973</objid>
+    <name>UAM_AAA03</name>
+   </item>
+   <item>
+    <objid>24976</objid>
+    <name>UAM_AAA04</name>
+   </item>
+   <item>
+    <objid>24979</objid>
+    <name>EAP-SIM_PROXY01</name>
+   </item>
+   <item>
+    <objid>24982</objid>
+    <name>EAP-SIM_PROXY02</name>
+   </item>
+   <item>
+    <objid>24988</objid>
+    <name>EAP-SIM_ACCT02</name>
+   </item>
+   <item>
+    <objid>24997</objid>
+    <name>FC01</name>
+   </item>
+   <item>
+    <objid>25000</objid>
+    <name>USSDGW</name>
+   </item>
+   <item>
+    <objid>25003</objid>
+    <name>EAPSIM-IMSI</name>
+   </item>
+   <item>
+    <objid>25006</objid>
+    <name>EAP-SIM_AAA01</name>
+   </item>
+   <item>
+    <objid>25009</objid>
+    <name>EAP-SIM_AAA02</name>
+   </item>
+   <item>
+    <objid>25018</objid>
+    <name>EAP-SIM_AAA03</name>
+   </item>
+   <item>
+    <objid>42885</objid>
+    <name>SMS01</name>
+   </item>
+   <item>
+    <objid>44299</objid>
+    <name>WiFi說明頁面監測(OTA01)</name>
+   </item>
+   <item>
+    <objid>48513</objid>
+    <name>EAP-SIM每日訊務處理統計(PROXY01)</name>
+   </item>
+   <item>
+    <objid>48519</objid>
+    <name>Radius訊務監測(PROXY01)</name>
+   </item>
+   <item>
+    <objid>48525</objid>
+    <name>EAPSIM每日不重複計使用人數統計(PROXY01)</name>
+   </item>
+   <item>
+    <objid>48531</objid>
+    <name>介接監測[IMSI](PROXY01)</name>
+   </item>
+   <item>
+    <objid>48537</objid>
+    <name>每秒平均交易次數[TPS](PROXY01)</name>
+   </item>
+   <item>
+    <objid>48543</objid>
+    <name>每日符合EAPSIM使用條件之用戶數統計(proxy02)</name>
+   </item>
+   <item>
+    <objid>48546</objid>
+    <name>企業用戶符合EAPSIM資格數量統計(PROXY02)</name>
+   </item>
+   <item>
+    <objid>50917</objid>
+    <name>EAP-SIM-SMS01</name>
+   </item>
+   <item>
+    <objid>56364</objid>
+    <name>EAP-SIM WEB01</name>
+   </item>
+   <item>
+    <objid>56378</objid>
+    <name>EAP-SIM WEB02</name>
+   </item>
+   <item>
+    <objid>56391</objid>
+    <name>EAP-SIM WEB01</name>
+   </item>
+   <item>
+    <objid>56407</objid>
+    <name>EAP-SIM WEB02</name>
+   </item>
+   <item>
+    <objid>56422</objid>
+    <name>EAP-SIM WIFI-Proxy</name>
+   </item>
+   <item>
+    <objid>56431</objid>
+    <name>EAP-SIM WIFI-AAA</name>
+   </item>
+   <item>
+    <objid>56444</objid>
+    <name>EAP-SIM WIFI-Proxy</name>
+   </item>
+   <item>
+    <objid>56458</objid>
+    <name>EAP-SIM WIFI-AAA</name>
+   </item>
+   <item>
+    <objid>61098</objid>
+    <name>WiFi Web(PRTG itPES)</name>
+   </item>
+   <item>
+    <objid>61223</objid>
+    <name>Domain Device</name>
+   </item>
+   <item>
+    <objid>65355</objid>
+    <name>EAP-SIM_ACCT01</name>
    </item>
   </devices>

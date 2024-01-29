@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="10" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>25004</objid>
+    <name>SNMP HP Proliant 系統健康狀況</name>
+   </item>
+   <item>
+    <objid>25005</objid>
+    <name>SNMP 系統正常執行時間</name>
+   </item>
+   <item>
+    <objid>65299</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 4 9390A0BCFTM11337</name>
+   </item>
+   <item>
+    <objid>65300</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 8 KPKX26SF</name>
+   </item>
+   <item>
+    <objid>65301</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 1 KVH6GRVJ</name>
+   </item>
+   <item>
+    <objid>65302</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 3 KVH6UBTJ</name>
+   </item>
+   <item>
+    <objid>65303</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 6 KVH6V1PJ</name>
+   </item>
+   <item>
+    <objid>65304</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 5 KVH7974J</name>
+   </item>
+   <item>
+    <objid>65305</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 7 KVH79J5J</name>
+   </item>
+   <item>
+    <objid>65306</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 2 KVH7B3VJ</name>
+   </item>
+  </sensor>

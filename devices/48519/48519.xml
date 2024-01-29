@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="1" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>48522</objid>
+    <name>Radius訊務監測</name>
+   </item>
+  </sensor>

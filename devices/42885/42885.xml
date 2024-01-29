@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="8" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>42888</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 7 X3C0A09QFTM21341</name>
+   </item>
+   <item>
+    <objid>42889</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 2 Y390A0OCFTM21345</name>
+   </item>
+   <item>
+    <objid>42890</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 5 Y390A0SVFTM21345</name>
+   </item>
+   <item>
+    <objid>42891</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 3 Y3A0A08FFTM21345</name>
+   </item>
+   <item>
+    <objid>42892</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 6 Y3A0A0YXFTM21345</name>
+   </item>
+   <item>
+    <objid>42893</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 1 Z4H0A05TFTM21451</name>
+   </item>
+   <item>
+    <objid>56398</objid>
+    <name>SNMP HP ProLiant System Health</name>
+   </item>
+   <item>
+    <objid>56405</objid>
+    <name>SNMP System Uptime</name>
+   </item>
+  </sensor>

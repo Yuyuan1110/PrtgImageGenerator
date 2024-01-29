@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="2" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>61224</objid>
+    <name>HTTP Full Web Page</name>
+   </item>
+   <item>
+    <objid>61225</objid>
+    <name>HTTP Transaction</name>
+   </item>
+  </sensor>

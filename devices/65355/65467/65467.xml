@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <channels totalcount="0" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>0</objid>
+    <objid_raw>0000000000</objid_raw>
+    <name>Overall Status</name>
+   </item>
+   <item>
+    <objid>-4</objid>
+    <objid_raw>*000000004</objid_raw>
+    <name>Downtime</name>
+   </item>
+   <item>
+    <objid>1</objid>
+    <objid_raw>0000000001</objid_raw>
+    <name>Thermal Status</name>
+   </item>
+   <item>
+    <objid>2</objid>
+    <objid_raw>0000000002</objid_raw>
+    <name>System Fan Status</name>
+   </item>
+   <item>
+    <objid>3</objid>
+    <objid_raw>0000000003</objid_raw>
+    <name>CPU Fan Status</name>
+   </item>
+   <item>
+    <objid>4</objid>
+    <objid_raw>0000000004</objid_raw>
+    <name>Fans Running</name>
+   </item>
+   <item>
+    <objid>5</objid>
+    <objid_raw>0000000005</objid_raw>
+    <name>Fans Broken</name>
+   </item>
+   <item>
+    <objid>6</objid>
+    <objid_raw>0000000006</objid_raw>
+    <name>Fault Tolerant Fans Running</name>
+   </item>
+   <item>
+    <objid>7</objid>
+    <objid_raw>0000000007</objid_raw>
+    <name>Fault Tolerant Fans Broken</name>
+   </item>
+  </channels>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="9" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>56408</objid>
+    <name>SNMP HP ProLiant System Health</name>
+   </item>
+   <item>
+    <objid>56409</objid>
+    <name>SNMP System Uptime</name>
+   </item>
+   <item>
+    <objid>56416</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 6 X390A19WFTM21341</name>
+   </item>
+   <item>
+    <objid>56417</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 2 X3A0A01BFTM21341</name>
+   </item>
+   <item>
+    <objid>56418</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 1 Y3A0A08AFTM21345</name>
+   </item>
+   <item>
+    <objid>56419</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 3 Y3A0A08RFTM21345</name>
+   </item>
+   <item>
+    <objid>56420</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 7 Y3A0A0ULFTM21345</name>
+   </item>
+   <item>
+    <objid>56421</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 5 Y3A0A0ZNFTM21345</name>
+   </item>
+   <item>
+    <objid>56474</objid>
+    <name>Ping</name>
+   </item>
+  </sensor>

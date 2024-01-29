@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="7" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>23264</objid>
+    <name>HTTP機制監控</name>
+   </item>
+   <item>
+    <objid>23265</objid>
+    <name>CDR IPMD SFTP Queue Size</name>
+   </item>
+   <item>
+    <objid>23266</objid>
+    <name>每日WiFi Local CDR 筆數統計</name>
+   </item>
+   <item>
+    <objid>23267</objid>
+    <name>每日WiFi使用流量統計</name>
+   </item>
+   <item>
+    <objid>23268</objid>
+    <name>用戶每日WiFi使用時間統計</name>
+   </item>
+   <item>
+    <objid>23271</objid>
+    <name>每日CDR檔案數統計 (local)</name>
+   </item>
+   <item>
+    <objid>27337</objid>
+    <name>每日用戶原始帳務檔案大小檢查</name>
+   </item>
+  </sensor>

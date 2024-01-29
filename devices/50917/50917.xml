@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="14" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>50918</objid>
+    <name>Ping</name>
+   </item>
+   <item>
+    <objid>50919</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>50920</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>50921</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+   <item>
+    <objid>50922</objid>
+    <name>CPU Load</name>
+   </item>
+   <item>
+    <objid>50923</objid>
+    <name>Disk Free: /</name>
+   </item>
+   <item>
+    <objid>50924</objid>
+    <name>Disk Free: /dev/shm</name>
+   </item>
+   <item>
+    <objid>50925</objid>
+    <name>Disk Free: /boot</name>
+   </item>
+   <item>
+    <objid>50926</objid>
+    <name>(001) lo Traffic</name>
+   </item>
+   <item>
+    <objid>50927</objid>
+    <name>(002) eth0 Traffic</name>
+   </item>
+   <item>
+    <objid>50928</objid>
+    <name>(003) eth1 Traffic</name>
+   </item>
+   <item>
+    <objid>50929</objid>
+    <name>(004) eth2 Traffic</name>
+   </item>
+   <item>
+    <objid>50930</objid>
+    <name>(005) eth3 Traffic</name>
+   </item>
+   <item>
+    <objid>50931</objid>
+    <name>(006) bond0 Traffic</name>
+   </item>
+  </sensor>

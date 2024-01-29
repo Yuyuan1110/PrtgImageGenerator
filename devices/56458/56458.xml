@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="10" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>56459</objid>
+    <name>Ping</name>
+   </item>
+   <item>
+    <objid>56460</objid>
+    <name>SNMP System Uptime</name>
+   </item>
+   <item>
+    <objid>56461</objid>
+    <name>SNMP CPU Load</name>
+   </item>
+   <item>
+    <objid>56463</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>56464</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+   <item>
+    <objid>56465</objid>
+    <name>Disk Free: /</name>
+   </item>
+   <item>
+    <objid>56466</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>56467</objid>
+    <name>Disk Free: /dev/shm</name>
+   </item>
+   <item>
+    <objid>56468</objid>
+    <name>eno1 Traffic</name>
+   </item>
+   <item>
+    <objid>56469</objid>
+    <name>Disk Free: /home</name>
+   </item>
+  </sensor>

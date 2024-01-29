@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="15" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>22836</objid>
+    <name>Ping</name>
+   </item>
+   <item>
+    <objid>22837</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>22838</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>22839</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+   <item>
+    <objid>22840</objid>
+    <name>Disk Free: /</name>
+   </item>
+   <item>
+    <objid>22841</objid>
+    <name>Disk Free: /boot</name>
+   </item>
+   <item>
+    <objid>22842</objid>
+    <name>Disk Free: /dev/shm</name>
+   </item>
+   <item>
+    <objid>22843</objid>
+    <name>Disk Free: /opt</name>
+   </item>
+   <item>
+    <objid>22844</objid>
+    <name>Disk Free: /var</name>
+   </item>
+   <item>
+    <objid>22845</objid>
+    <name>Disk Free: /var/log</name>
+   </item>
+   <item>
+    <objid>22846</objid>
+    <name>Disk Free: /var/log/coredumps</name>
+   </item>
+   <item>
+    <objid>22847</objid>
+    <name>(001) lo Traffic</name>
+   </item>
+   <item>
+    <objid>22848</objid>
+    <name>(002) eth0 Traffic</name>
+   </item>
+   <item>
+    <objid>22849</objid>
+    <name>(003) eth1 Traffic</name>
+   </item>
+   <item>
+    <objid>49896</objid>
+    <name>SNMP System Uptime</name>
+   </item>
+  </sensor>

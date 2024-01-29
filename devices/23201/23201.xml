@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="14" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>23204</objid>
+    <name>PING 1</name>
+   </item>
+   <item>
+    <objid>23240</objid>
+    <name>正常執行時間 1</name>
+   </item>
+   <item>
+    <objid>23242</objid>
+    <name>(002) eth0 Traffic</name>
+   </item>
+   <item>
+    <objid>23243</objid>
+    <name>(006) eth4 Traffic</name>
+   </item>
+   <item>
+    <objid>23244</objid>
+    <name>(008) bond0 Traffic</name>
+   </item>
+   <item>
+    <objid>23246</objid>
+    <name>Disk Free: /</name>
+   </item>
+   <item>
+    <objid>23247</objid>
+    <name>Disk Free: /dev/shm</name>
+   </item>
+   <item>
+    <objid>23248</objid>
+    <name>Disk Free: /boot</name>
+   </item>
+   <item>
+    <objid>23249</objid>
+    <name>Disk Free: /home</name>
+   </item>
+   <item>
+    <objid>23250</objid>
+    <name>CPU 負載 1</name>
+   </item>
+   <item>
+    <objid>23251</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>23252</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+   <item>
+    <objid>23253</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>65462</objid>
+    <name>ping_sms_gw_fail_times</name>
+   </item>
+  </sensor>

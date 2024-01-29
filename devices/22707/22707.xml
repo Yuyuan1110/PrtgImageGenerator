@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="16" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>22708</objid>
+    <name>Ping</name>
+   </item>
+   <item>
+    <objid>22709</objid>
+    <name>SNMP CPU 負載</name>
+   </item>
+   <item>
+    <objid>22710</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>22711</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>22712</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+   <item>
+    <objid>25293</objid>
+    <name>Processes: Radiusd</name>
+   </item>
+   <item>
+    <objid>25294</objid>
+    <name>Processes: HTTPD</name>
+   </item>
+   <item>
+    <objid>49886</objid>
+    <name>SNMP System Uptime</name>
+   </item>
+   <item>
+    <objid>61083</objid>
+    <name>Disk Free: /</name>
+   </item>
+   <item>
+    <objid>61084</objid>
+    <name>Disk Free: /boot</name>
+   </item>
+   <item>
+    <objid>61085</objid>
+    <name>Disk Free: /home</name>
+   </item>
+   <item>
+    <objid>61086</objid>
+    <name>(002) em3 Traffic</name>
+   </item>
+   <item>
+    <objid>61087</objid>
+    <name>(003) em1 Traffic</name>
+   </item>
+   <item>
+    <objid>61088</objid>
+    <name>(004) em4 Traffic</name>
+   </item>
+   <item>
+    <objid>61089</objid>
+    <name>(005) em2 Traffic</name>
+   </item>
+   <item>
+    <objid>61090</objid>
+    <name>(006) bond0 Traffic</name>
+   </item>
+  </sensor>

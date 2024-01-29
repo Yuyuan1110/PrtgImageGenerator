@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <channels totalcount="0" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>-4</objid>
+    <objid_raw>*000000004</objid_raw>
+    <name>下線時間</name>
+   </item>
+   <item>
+    <objid>2</objid>
+    <objid_raw>0000000002</objid_raw>
+    <name>Total Requests</name>
+   </item>
+   <item>
+    <objid>3</objid>
+    <objid_raw>0000000003</objid_raw>
+    <name>Total Accepts</name>
+   </item>
+   <item>
+    <objid>4</objid>
+    <objid_raw>0000000004</objid_raw>
+    <name>Total Rejects</name>
+   </item>
+   <item>
+    <objid>5</objid>
+    <objid_raw>0000000005</objid_raw>
+    <name>Policy Rejects</name>
+   </item>
+   <item>
+    <objid>6</objid>
+    <objid_raw>0000000006</objid_raw>
+    <name>SS7 Rejects</name>
+   </item>
+   <item>
+    <objid>7</objid>
+    <objid_raw>0000000007</objid_raw>
+    <name>Total Challange</name>
+   </item>
+   <item>
+    <objid>8</objid>
+    <objid_raw>0000000008</objid_raw>
+    <name>Total Drops</name>
+   </item>
+   <item>
+    <objid>9</objid>
+    <objid_raw>0000000009</objid_raw>
+    <name>Total Timeout</name>
+   </item>
+   <item>
+    <objid>10</objid>
+    <objid_raw>0000000010</objid_raw>
+    <name>Unique Requests</name>
+   </item>
+   <item>
+    <objid>11</objid>
+    <objid_raw>0000000011</objid_raw>
+    <name>Unique Users</name>
+   </item>
+  </channels>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="1" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>48548</objid>
+    <name>企業用戶符合EAPSIM資格數量統計</name>
+   </item>
+  </sensor>

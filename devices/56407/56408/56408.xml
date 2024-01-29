@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <channels totalcount="0" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>-4</objid>
+    <objid_raw>*000000004</objid_raw>
+    <name>Downtime</name>
+   </item>
+   <item>
+    <objid>0</objid>
+    <objid_raw>0000000000</objid_raw>
+    <name>Overall Status</name>
+   </item>
+   <item>
+    <objid>1</objid>
+    <objid_raw>0000000001</objid_raw>
+    <name>Thermal Status</name>
+   </item>
+   <item>
+    <objid>2</objid>
+    <objid_raw>0000000002</objid_raw>
+    <name>System Fan Status</name>
+   </item>
+   <item>
+    <objid>3</objid>
+    <objid_raw>0000000003</objid_raw>
+    <name>CPU Fan Status</name>
+   </item>
+   <item>
+    <objid>4</objid>
+    <objid_raw>0000000004</objid_raw>
+    <name>Fans Running</name>
+   </item>
+   <item>
+    <objid>5</objid>
+    <objid_raw>0000000005</objid_raw>
+    <name>Fans Broken</name>
+   </item>
+   <item>
+    <objid>6</objid>
+    <objid_raw>0000000006</objid_raw>
+    <name>Fault Tolerant Fans Running</name>
+   </item>
+   <item>
+    <objid>7</objid>
+    <objid_raw>0000000007</objid_raw>
+    <name>Fault Tolerant Fans Broken</name>
+   </item>
+   <item>
+    <objid>8</objid>
+    <objid_raw>0000000008</objid_raw>
+    <name>Temperature 01(ambient)</name>
+   </item>
+   <item>
+    <objid>9</objid>
+    <objid_raw>0000000009</objid_raw>
+    <name>Temperature 02(cpu)</name>
+   </item>
+   <item>
+    <objid>10</objid>
+    <objid_raw>0000000010</objid_raw>
+    <name>Temperature 03(cpu)</name>
+   </item>
+   <item>
+    <objid>11</objid>
+    <objid_raw>0000000011</objid_raw>
+    <name>Temperature 04(memory)</name>
+   </item>
+   <item>
+    <objid>12</objid>
+    <objid_raw>0000000012</objid_raw>
+    <name>Temperature 05(memory)</name>
+   </item>
+   <item>
+    <objid>13</objid>
+    <objid_raw>0000000013</objid_raw>
+    <name>Temperature 06(memory)</name>
+   </item>
+   <item>
+    <objid>14</objid>
+    <objid_raw>0000000014</objid_raw>
+    <name>Temperature 07(memory)</name>
+   </item>
+   <item>
+    <objid>15</objid>
+    <objid_raw>0000000015</objid_raw>
+    <name>Temperature 08(memory)</name>
+   </item>
+   <item>
+    <objid>16</objid>
+    <objid_raw>0000000016</objid_raw>
+    <name>Temperature 09(memory)</name>
+   </item>
+   <item>
+    <objid>17</objid>
+    <objid_raw>0000000017</objid_raw>
+    <name>Temperature 10(memory)</name>
+   </item>
+   <item>
+    <objid>18</objid>
+    <objid_raw>0000000018</objid_raw>
+    <name>Temperature 11(memory)</name>
+   </item>
+   <item>
+    <objid>19</objid>
+    <objid_raw>0000000019</objid_raw>
+    <name>Temperature 12(system)</name>
+   </item>
+   <item>
+    <objid>20</objid>
+    <objid_raw>0000000020</objid_raw>
+    <name>Temperature 13(system)</name>
+   </item>
+   <item>
+    <objid>21</objid>
+    <objid_raw>0000000021</objid_raw>
+    <name>Temperature 14(powerSupply)</name>
+   </item>
+   <item>
+    <objid>22</objid>
+    <objid_raw>0000000022</objid_raw>
+    <name>Temperature 15(powerSupply)</name>
+   </item>
+   <item>
+    <objid>23</objid>
+    <objid_raw>0000000023</objid_raw>
+    <name>Temperature 16(powerSupply)</name>
+   </item>
+   <item>
+    <objid>24</objid>
+    <objid_raw>0000000024</objid_raw>
+    <name>Temperature 17(system)</name>
+   </item>
+   <item>
+    <objid>25</objid>
+    <objid_raw>0000000025</objid_raw>
+    <name>Temperature 18(system)</name>
+   </item>
+   <item>
+    <objid>26</objid>
+    <objid_raw>0000000026</objid_raw>
+    <name>Temperature 19(system)</name>
+   </item>
+   <item>
+    <objid>27</objid>
+    <objid_raw>0000000027</objid_raw>
+    <name>Temperature 20(system)</name>
+   </item>
+   <item>
+    <objid>28</objid>
+    <objid_raw>0000000028</objid_raw>
+    <name>Temperature 21(system)</name>
+   </item>
+   <item>
+    <objid>29</objid>
+    <objid_raw>0000000029</objid_raw>
+    <name>Temperature 22(system)</name>
+   </item>
+   <item>
+    <objid>30</objid>
+    <objid_raw>0000000030</objid_raw>
+    <name>Temperature 23(system)</name>
+   </item>
+   <item>
+    <objid>31</objid>
+    <objid_raw>0000000031</objid_raw>
+    <name>Temperature 24(system)</name>
+   </item>
+   <item>
+    <objid>32</objid>
+    <objid_raw>0000000032</objid_raw>
+    <name>Temperature 25(system)</name>
+   </item>
+   <item>
+    <objid>33</objid>
+    <objid_raw>0000000033</objid_raw>
+    <name>Temperature 26(system)</name>
+   </item>
+   <item>
+    <objid>34</objid>
+    <objid_raw>0000000034</objid_raw>
+    <name>Temperature 34(ioBoard)</name>
+   </item>
+   <item>
+    <objid>35</objid>
+    <objid_raw>0000000035</objid_raw>
+    <name>Temperature 35(ioBoard)</name>
+   </item>
+   <item>
+    <objid>36</objid>
+    <objid_raw>0000000036</objid_raw>
+    <name>Temperature 36(ioBoard)</name>
+   </item>
+   <item>
+    <objid>37</objid>
+    <objid_raw>0000000037</objid_raw>
+    <name>Temperature 40(ioBoard)</name>
+   </item>
+   <item>
+    <objid>38</objid>
+    <objid_raw>0000000038</objid_raw>
+    <name>Temperature 42(system)</name>
+   </item>
+   <item>
+    <objid>39</objid>
+    <objid_raw>0000000039</objid_raw>
+    <name>Temperature 43(systemBoard)</name>
+   </item>
+   <item>
+    <objid>40</objid>
+    <objid_raw>0000000040</objid_raw>
+    <name>Temperature 44(system)</name>
+   </item>
+   <item>
+    <objid>41</objid>
+    <objid_raw>0000000041</objid_raw>
+    <name>Temperature 45(system)</name>
+   </item>
+   <item>
+    <objid>42</objid>
+    <objid_raw>0000000042</objid_raw>
+    <name>Temperature 46(system)</name>
+   </item>
+   <item>
+    <objid>43</objid>
+    <objid_raw>0000000043</objid_raw>
+    <name>Temperature 47(system)</name>
+   </item>
+   <item>
+    <objid>44</objid>
+    <objid_raw>0000000044</objid_raw>
+    <name>Temperature 48(system)</name>
+   </item>
+   <item>
+    <objid>45</objid>
+    <objid_raw>0000000045</objid_raw>
+    <name>Temperature 49(chassis)</name>
+   </item>
+   <item>
+    <objid>46</objid>
+    <objid_raw>0000000046</objid_raw>
+    <name>Temperature 50(chassis)</name>
+   </item>
+   <item>
+    <objid>47</objid>
+    <objid_raw>0000000047</objid_raw>
+    <name>Power Consumption 1</name>
+   </item>
+   <item>
+    <objid>48</objid>
+    <objid_raw>0000000048</objid_raw>
+    <name>Power Consumption 1 (%)</name>
+   </item>
+   <item>
+    <objid>49</objid>
+    <objid_raw>0000000049</objid_raw>
+    <name>Power Supply 1 Status</name>
+   </item>
+   <item>
+    <objid>50</objid>
+    <objid_raw>0000000050</objid_raw>
+    <name>Power Supply 1 Condition</name>
+   </item>
+   <item>
+    <objid>51</objid>
+    <objid_raw>0000000051</objid_raw>
+    <name>Power Consumption 2</name>
+   </item>
+   <item>
+    <objid>52</objid>
+    <objid_raw>0000000052</objid_raw>
+    <name>Power Consumption 2 (%)</name>
+   </item>
+   <item>
+    <objid>53</objid>
+    <objid_raw>0000000053</objid_raw>
+    <name>Power Supply 2 Status</name>
+   </item>
+   <item>
+    <objid>54</objid>
+    <objid_raw>0000000054</objid_raw>
+    <name>Power Supply 2 Condition</name>
+   </item>
+   <item>
+    <objid>55</objid>
+    <objid_raw>0000000055</objid_raw>
+    <name>Disk Controller Status</name>
+   </item>
+  </channels>

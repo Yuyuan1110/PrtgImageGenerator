@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="1" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>48538</objid>
+    <name>每秒平均交易次數(TPS)</name>
+   </item>
+  </sensor>

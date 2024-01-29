@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="14" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>23194</objid>
+    <name>PING 1</name>
+   </item>
+   <item>
+    <objid>23221</objid>
+    <name>正常執行時間 1</name>
+   </item>
+   <item>
+    <objid>23223</objid>
+    <name>(002) eth0 Traffic</name>
+   </item>
+   <item>
+    <objid>23224</objid>
+    <name>(003) eth1 Traffic</name>
+   </item>
+   <item>
+    <objid>23225</objid>
+    <name>(008) bond0 Traffic</name>
+   </item>
+   <item>
+    <objid>23226</objid>
+    <name>Disk Free: /</name>
+   </item>
+   <item>
+    <objid>23227</objid>
+    <name>Disk Free: /dev/shm</name>
+   </item>
+   <item>
+    <objid>23228</objid>
+    <name>Disk Free: /boot</name>
+   </item>
+   <item>
+    <objid>23233</objid>
+    <name>CPU 負載 1</name>
+   </item>
+   <item>
+    <objid>23234</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>23235</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+   <item>
+    <objid>23236</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>25291</objid>
+    <name>Processes: Radiusd</name>
+   </item>
+   <item>
+    <objid>25292</objid>
+    <name>Processes: HTTPD</name>
+   </item>
+  </sensor>

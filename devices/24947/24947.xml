@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="10" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>24948</objid>
+    <name>SNMP HP Proliant 系統健康狀況</name>
+   </item>
+   <item>
+    <objid>24957</objid>
+    <name>SNMP 系統正常執行時間</name>
+   </item>
+   <item>
+    <objid>38365</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 8 EA01PC219ER31206</name>
+   </item>
+   <item>
+    <objid>38366</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 7 PPWEL2TB</name>
+   </item>
+   <item>
+    <objid>38367</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 1 PPWLXX1B</name>
+   </item>
+   <item>
+    <objid>38368</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 4 PPWM10YB</name>
+   </item>
+   <item>
+    <objid>38369</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 3 PPWM2K6B</name>
+   </item>
+   <item>
+    <objid>38370</objid>
+    <name>Physical Disk: Port 1I Box 2 Bay 2 PPWMDATB</name>
+   </item>
+   <item>
+    <objid>38371</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 5 PPWMDEZB</name>
+   </item>
+   <item>
+    <objid>38372</objid>
+    <name>Physical Disk: Port 2I Box 2 Bay 6 PPWMDZ2B</name>
+   </item>
+  </sensor>

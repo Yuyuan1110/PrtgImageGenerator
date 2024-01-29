@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <channels totalcount="0" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>0</objid>
+    <objid_raw>0000000000</objid_raw>
+    <name>總狀態</name>
+   </item>
+   <item>
+    <objid>-4</objid>
+    <objid_raw>*000000004</objid_raw>
+    <name>下線時間</name>
+   </item>
+   <item>
+    <objid>1</objid>
+    <objid_raw>0000000001</objid_raw>
+    <name>熱狀態</name>
+   </item>
+   <item>
+    <objid>2</objid>
+    <objid_raw>0000000002</objid_raw>
+    <name>系統風扇狀態</name>
+   </item>
+   <item>
+    <objid>3</objid>
+    <objid_raw>0000000003</objid_raw>
+    <name>CPU 風扇狀態</name>
+   </item>
+   <item>
+    <objid>4</objid>
+    <objid_raw>0000000004</objid_raw>
+    <name>風扇正常執行</name>
+   </item>
+   <item>
+    <objid>5</objid>
+    <objid_raw>0000000005</objid_raw>
+    <name>風扇發生故障</name>
+   </item>
+   <item>
+    <objid>6</objid>
+    <objid_raw>0000000006</objid_raw>
+    <name>容錯風扇正常執行</name>
+   </item>
+   <item>
+    <objid>7</objid>
+    <objid_raw>0000000007</objid_raw>
+    <name>容錯風扇發生故障</name>
+   </item>
+   <item>
+    <objid>1001</objid>
+    <objid_raw>0000001001</objid_raw>
+    <name>Temperature 01(ambient)</name>
+   </item>
+   <item>
+    <objid>1002</objid>
+    <objid_raw>0000001002</objid_raw>
+    <name>Temperature 02(cpu)</name>
+   </item>
+   <item>
+    <objid>1003</objid>
+    <objid_raw>0000001003</objid_raw>
+    <name>Temperature 03(cpu)</name>
+   </item>
+   <item>
+    <objid>1004</objid>
+    <objid_raw>0000001004</objid_raw>
+    <name>Temperature 06(memory)</name>
+   </item>
+   <item>
+    <objid>1005</objid>
+    <objid_raw>0000001005</objid_raw>
+    <name>Temperature 07(memory)</name>
+   </item>
+   <item>
+    <objid>1006</objid>
+    <objid_raw>0000001006</objid_raw>
+    <name>Temperature 10(memory)</name>
+   </item>
+   <item>
+    <objid>1007</objid>
+    <objid_raw>0000001007</objid_raw>
+    <name>Temperature 11(memory)</name>
+   </item>
+   <item>
+    <objid>1008</objid>
+    <objid_raw>0000001008</objid_raw>
+    <name>Temperature 12(system)</name>
+   </item>
+   <item>
+    <objid>1009</objid>
+    <objid_raw>0000001009</objid_raw>
+    <name>Temperature 13(system)</name>
+   </item>
+   <item>
+    <objid>1010</objid>
+    <objid_raw>0000001010</objid_raw>
+    <name>Temperature 14(powerSupply)</name>
+   </item>
+   <item>
+    <objid>1011</objid>
+    <objid_raw>0000001011</objid_raw>
+    <name>Temperature 15(powerSupply)</name>
+   </item>
+   <item>
+    <objid>1012</objid>
+    <objid_raw>0000001012</objid_raw>
+    <name>Temperature 16(powerSupply)</name>
+   </item>
+   <item>
+    <objid>1013</objid>
+    <objid_raw>0000001013</objid_raw>
+    <name>Temperature 17(system)</name>
+   </item>
+   <item>
+    <objid>1014</objid>
+    <objid_raw>0000001014</objid_raw>
+    <name>Temperature 18(system)</name>
+   </item>
+   <item>
+    <objid>1015</objid>
+    <objid_raw>0000001015</objid_raw>
+    <name>Temperature 19(system)</name>
+   </item>
+   <item>
+    <objid>1016</objid>
+    <objid_raw>0000001016</objid_raw>
+    <name>Temperature 20(system)</name>
+   </item>
+   <item>
+    <objid>1017</objid>
+    <objid_raw>0000001017</objid_raw>
+    <name>Temperature 21(system)</name>
+   </item>
+   <item>
+    <objid>1018</objid>
+    <objid_raw>0000001018</objid_raw>
+    <name>Temperature 22(system)</name>
+   </item>
+   <item>
+    <objid>1019</objid>
+    <objid_raw>0000001019</objid_raw>
+    <name>Temperature 23(system)</name>
+   </item>
+   <item>
+    <objid>1020</objid>
+    <objid_raw>0000001020</objid_raw>
+    <name>Temperature 24(system)</name>
+   </item>
+   <item>
+    <objid>1021</objid>
+    <objid_raw>0000001021</objid_raw>
+    <name>Temperature 25(system)</name>
+   </item>
+   <item>
+    <objid>1022</objid>
+    <objid_raw>0000001022</objid_raw>
+    <name>Temperature 26(system)</name>
+   </item>
+   <item>
+    <objid>1023</objid>
+    <objid_raw>0000001023</objid_raw>
+    <name>Temperature 34(ioBoard)</name>
+   </item>
+   <item>
+    <objid>1024</objid>
+    <objid_raw>0000001024</objid_raw>
+    <name>Temperature 35(ioBoard)</name>
+   </item>
+   <item>
+    <objid>1025</objid>
+    <objid_raw>0000001025</objid_raw>
+    <name>Temperature 36(ioBoard)</name>
+   </item>
+   <item>
+    <objid>1026</objid>
+    <objid_raw>0000001026</objid_raw>
+    <name>Temperature 40(ioBoard)</name>
+   </item>
+   <item>
+    <objid>1027</objid>
+    <objid_raw>0000001027</objid_raw>
+    <name>Temperature 42(system)</name>
+   </item>
+   <item>
+    <objid>1028</objid>
+    <objid_raw>0000001028</objid_raw>
+    <name>Temperature 43(systemBoard)</name>
+   </item>
+   <item>
+    <objid>1029</objid>
+    <objid_raw>0000001029</objid_raw>
+    <name>Temperature 44(system)</name>
+   </item>
+   <item>
+    <objid>1030</objid>
+    <objid_raw>0000001030</objid_raw>
+    <name>Temperature 45(system)</name>
+   </item>
+   <item>
+    <objid>1031</objid>
+    <objid_raw>0000001031</objid_raw>
+    <name>Temperature 46(system)</name>
+   </item>
+   <item>
+    <objid>1032</objid>
+    <objid_raw>0000001032</objid_raw>
+    <name>Temperature 47(system)</name>
+   </item>
+   <item>
+    <objid>1033</objid>
+    <objid_raw>0000001033</objid_raw>
+    <name>Temperature 48(system)</name>
+   </item>
+   <item>
+    <objid>1034</objid>
+    <objid_raw>0000001034</objid_raw>
+    <name>Temperature 49(chassis)</name>
+   </item>
+   <item>
+    <objid>1035</objid>
+    <objid_raw>0000001035</objid_raw>
+    <name>Temperature 50(chassis)</name>
+   </item>
+   <item>
+    <objid>1036</objid>
+    <objid_raw>0000001036</objid_raw>
+    <name>Power Consumption 1</name>
+   </item>
+   <item>
+    <objid>1037</objid>
+    <objid_raw>0000001037</objid_raw>
+    <name>Power Consumption 1 (%)</name>
+   </item>
+   <item>
+    <objid>1038</objid>
+    <objid_raw>0000001038</objid_raw>
+    <name>Power Supply 1 Status</name>
+   </item>
+   <item>
+    <objid>1039</objid>
+    <objid_raw>0000001039</objid_raw>
+    <name>Power Supply 1 Condition</name>
+   </item>
+   <item>
+    <objid>1040</objid>
+    <objid_raw>0000001040</objid_raw>
+    <name>Power Consumption 2</name>
+   </item>
+   <item>
+    <objid>1041</objid>
+    <objid_raw>0000001041</objid_raw>
+    <name>Power Consumption 2 (%)</name>
+   </item>
+   <item>
+    <objid>1042</objid>
+    <objid_raw>0000001042</objid_raw>
+    <name>Power Supply 2 Status</name>
+   </item>
+   <item>
+    <objid>1043</objid>
+    <objid_raw>0000001043</objid_raw>
+    <name>Power Supply 2 Condition</name>
+   </item>
+   <item>
+    <objid>1044</objid>
+    <objid_raw>0000001044</objid_raw>
+    <name>Disk Controller Status</name>
+   </item>
+   <item>
+    <objid>1045</objid>
+    <objid_raw>0000001045</objid_raw>
+    <name>Temperature 17(powerSupply)</name>
+   </item>
+   <item>
+    <objid>1046</objid>
+    <objid_raw>0000001046</objid_raw>
+    <name>Temperature 18(powerSupply)</name>
+   </item>
+   <item>
+    <objid>1047</objid>
+    <objid_raw>0000001047</objid_raw>
+    <name>Temperature 19(powerSupply)</name>
+   </item>
+   <item>
+    <objid>1048</objid>
+    <objid_raw>0000001048</objid_raw>
+    <name>Temperature 20(powerSupply)</name>
+   </item>
+   <item>
+    <objid>1049</objid>
+    <objid_raw>0000001049</objid_raw>
+    <name>Temperature 21(powerSupply)</name>
+   </item>
+   <item>
+    <objid>1050</objid>
+    <objid_raw>0000001050</objid_raw>
+    <name>Temperature 22(powerSupply)</name>
+   </item>
+   <item>
+    <objid>1051</objid>
+    <objid_raw>0000001051</objid_raw>
+    <name>Temperature 23(powerSupply)</name>
+   </item>
+   <item>
+    <objid>1052</objid>
+    <objid_raw>0000001052</objid_raw>
+    <name>Temperature 24(powerSupply)</name>
+   </item>
+   <item>
+    <objid>1053</objid>
+    <objid_raw>0000001053</objid_raw>
+    <name>Temperature 42(powerSupply)</name>
+   </item>
+   <item>
+    <objid>1054</objid>
+    <objid_raw>0000001054</objid_raw>
+    <name>Temperature 27(ioBoard)</name>
+   </item>
+  </channels>

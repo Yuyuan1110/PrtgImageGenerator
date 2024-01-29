@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="13" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>22768</objid>
+    <name>Ping</name>
+   </item>
+   <item>
+    <objid>22769</objid>
+    <name>SNMP CPU 負載</name>
+   </item>
+   <item>
+    <objid>22770</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>22771</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>22772</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+   <item>
+    <objid>22773</objid>
+    <name>Disk Free: /</name>
+   </item>
+   <item>
+    <objid>22774</objid>
+    <name>Disk Free: /boot</name>
+   </item>
+   <item>
+    <objid>22775</objid>
+    <name>Disk Free: /dev/shm</name>
+   </item>
+   <item>
+    <objid>22777</objid>
+    <name>(002) eth0 Traffic</name>
+   </item>
+   <item>
+    <objid>22778</objid>
+    <name>(003) eth1 Traffic</name>
+   </item>
+   <item>
+    <objid>22781</objid>
+    <name>(006) bond0 Traffic</name>
+   </item>
+   <item>
+    <objid>49893</objid>
+    <name>SNMP System Uptime</name>
+   </item>
+   <item>
+    <objid>62567</objid>
+    <name>Disk Free: /home</name>
+   </item>
+  </sensor>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sensor totalcount="16" listend="1">
+   <prtg-version>23.4.90.1299</prtg-version>
+   <item>
+    <objid>22798</objid>
+    <name>Ping</name>
+   </item>
+   <item>
+    <objid>22799</objid>
+    <name>SNMP CPU 負載</name>
+   </item>
+   <item>
+    <objid>22800</objid>
+    <name>Memory: Physical memory</name>
+   </item>
+   <item>
+    <objid>22801</objid>
+    <name>Memory: Swap space</name>
+   </item>
+   <item>
+    <objid>22802</objid>
+    <name>Memory: Virtual memory</name>
+   </item>
+   <item>
+    <objid>22803</objid>
+    <name>Disk Free: /</name>
+   </item>
+   <item>
+    <objid>22804</objid>
+    <name>Disk Free: /boot</name>
+   </item>
+   <item>
+    <objid>22805</objid>
+    <name>Disk Free: /dev/shm</name>
+   </item>
+   <item>
+    <objid>22806</objid>
+    <name>Disk Free: /home</name>
+   </item>
+   <item>
+    <objid>49888</objid>
+    <name>SNMP System Uptime</name>
+   </item>
+   <item>
+    <objid>59709</objid>
+    <name>(001) lo Traffic</name>
+   </item>
+   <item>
+    <objid>59710</objid>
+    <name>(002) enp3s0f0 Traffic</name>
+   </item>
+   <item>
+    <objid>59711</objid>
+    <name>(003) enp3s0f1 Traffic</name>
+   </item>
+   <item>
+    <objid>59712</objid>
+    <name>(004) enp4s0f0 Traffic</name>
+   </item>
+   <item>
+    <objid>59713</objid>
+    <name>(005) enp4s0f1 Traffic</name>
+   </item>
+   <item>
+    <objid>59714</objid>
+    <name>(006) bond0 Traffic</name>
+   </item>
+  </sensor>
