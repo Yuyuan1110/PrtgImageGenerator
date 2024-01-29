@@ -40,7 +40,7 @@ public class XMLDownloadImpl implements XMLDownload {
         HttpURLConnection connection = new HttpConnectorImpl().setConnection(url);
 
         try (InputStream in = connection.getInputStream();
-             InputStreamReader isr = new InputStreamReader(in);
+             InputStreamReader isr = new InputStreamReader(in,StandardCharsets.UTF_8);
              BufferedReader bf = new BufferedReader(isr);
              FileOutputStream fileOutputStream = new FileOutputStream(path);
              OutputStreamWriter writer = new OutputStreamWriter(fileOutputStream, StandardCharsets.UTF_8)

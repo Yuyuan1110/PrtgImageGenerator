@@ -1,66 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <devices totalcount="74" listend="1">
+  <devices totalcount="17" listend="1">
    <prtg-version>16.1.21.1422</prtg-version>
-   <item>
-    <objid>2128</objid>
-    <name>MZ Web</name>
-   </item>
-   <item>
-    <objid>2155</objid>
-    <name>168.95.1.1</name>
-   </item>
-   <item>
-    <objid>2199</objid>
-    <name>www.wifihub.org</name>
-   </item>
-   <item>
-    <objid>2201</objid>
-    <name>AWS RDS</name>
-   </item>
-   <item>
-    <objid>2207</objid>
-    <name>AWS ElastCache</name>
-   </item>
-   <item>
-    <objid>2210</objid>
-    <name>AWS SQS</name>
-   </item>
-   <item>
-    <objid>2213</objid>
-    <name>AWS EC2</name>
-   </item>
-   <item>
-    <objid>2323</objid>
-    <name>8.8.8.8</name>
-   </item>
-   <item>
-    <objid>2332</objid>
-    <name>staging-pbx</name>
-   </item>
-   <item>
-    <objid>2333</objid>
-    <name>production-pbx-master</name>
-   </item>
-   <item>
-    <objid>2505</objid>
-    <name>staging-wowza-01</name>
-   </item>
-   <item>
-    <objid>2514</objid>
-    <name>staging-wowza-02</name>
-   </item>
-   <item>
-    <objid>2532</objid>
-    <name>Web Site (Production)</name>
-   </item>
-   <item>
-    <objid>2583</objid>
-    <name>8.8.4.4</name>
-   </item>
-   <item>
-    <objid>2592</objid>
-    <name>168.95.192.1</name>
-   </item>
    <item>
     <objid>2606</objid>
     <name>FortiGate 60D</name>
@@ -70,32 +10,12 @@
     <name>Cisco Router (C1841)</name>
    </item>
    <item>
-    <objid>3022</objid>
-    <name>CHIEF-SW-Master</name>
-   </item>
-   <item>
-    <objid>3026</objid>
-    <name>CHIEF-SW-Slave</name>
-   </item>
-   <item>
     <objid>3255</objid>
     <name>HP LaserJet 200 colorMFP M276nw(E62245)</name>
    </item>
    <item>
-    <objid>40</objid>
-    <name>Probe Device</name>
-   </item>
-   <item>
-    <objid>4488</objid>
-    <name>Cisco2970G-24</name>
-   </item>
-   <item>
     <objid>4880</objid>
     <name>DPAP_192.168.0.90</name>
-   </item>
-   <item>
-    <objid>5276</objid>
-    <name>139.162.76.86</name>
    </item>
    <item>
     <objid>5370</objid>
@@ -104,22 +24,6 @@
    <item>
     <objid>5410</objid>
     <name>SMS Probe TC</name>
-   </item>
-   <item>
-    <objid>5572</objid>
-    <name>HINET DNS</name>
-   </item>
-   <item>
-    <objid>5617</objid>
-    <name>1.1.1.1</name>
-   </item>
-   <item>
-    <objid>5724</objid>
-    <name>FortiGate 60D</name>
-   </item>
-   <item>
-    <objid>5771</objid>
-    <name>IKEA Portal</name>
    </item>
    <item>
     <objid>5792</objid>
@@ -134,92 +38,12 @@
     <name>[3] AAA02 (192.168.0.216)</name>
    </item>
    <item>
-    <objid>5822</objid>
-    <name>192.168.0.142 (Raspberry Pi3)</name>
-   </item>
-   <item>
-    <objid>5938</objid>
-    <name>HiNet DNS 168.95.1.1</name>
-   </item>
-   <item>
-    <objid>6049</objid>
-    <name>Web Portal on DO</name>
-   </item>
-   <item>
     <objid>6149</objid>
     <name>Test VM DO</name>
    </item>
    <item>
-    <objid>6265</objid>
-    <name>Cisco Switch (Testing)</name>
-   </item>
-   <item>
-    <objid>6650</objid>
-    <name>Cisco 3850</name>
-   </item>
-   <item>
-    <objid>6916</objid>
-    <name>Bouncer Log</name>
-   </item>
-   <item>
-    <objid>7057</objid>
-    <name>dns.hinet.net</name>
-   </item>
-   <item>
-    <objid>7058</objid>
-    <name>192.168.0.1</name>
-   </item>
-   <item>
-    <objid>7064</objid>
-    <name>HeartOfGold</name>
-   </item>
-   <item>
-    <objid>7065</objid>
-    <name>C2970SW.acom-networks.com</name>
-   </item>
-   <item>
-    <objid>7066</objid>
-    <name>ICR-4103</name>
-   </item>
-   <item>
-    <objid>7074</objid>
-    <name>google-public-dns-a.google.com</name>
-   </item>
-   <item>
     <objid>7189</objid>
     <name>nominum cacheserve(192.168.0.21)</name>
-   </item>
-   <item>
-    <objid>7215</objid>
-    <name>CHTN DNS Test (Kevin)</name>
-   </item>
-   <item>
-    <objid>7229</objid>
-    <name>F5 Lab Test (FET AIC)</name>
-   </item>
-   <item>
-    <objid>7264</objid>
-    <name>Generator</name>
-   </item>
-   <item>
-    <objid>7265</objid>
-    <name>RADIUS NODE</name>
-   </item>
-   <item>
-    <objid>7266</objid>
-    <name>F5</name>
-   </item>
-   <item>
-    <objid>7395</objid>
-    <name>hinet</name>
-   </item>
-   <item>
-    <objid>7421</objid>
-    <name>192.168.0.238</name>
-   </item>
-   <item>
-    <objid>7487</objid>
-    <name>192.168.0.238</name>
    </item>
    <item>
     <objid>7856</objid>
@@ -230,40 +54,8 @@
     <name>HP Color LaserJet Pro M478f-9w</name>
    </item>
    <item>
-    <objid>7905</objid>
-    <name>ASS01-production</name>
-   </item>
-   <item>
-    <objid>7972</objid>
-    <name>wowza01-production</name>
-   </item>
-   <item>
-    <objid>8081</objid>
-    <name>NETGEAR WAX610</name>
-   </item>
-   <item>
-    <objid>8138</objid>
-    <name>MLAP TEST</name>
-   </item>
-   <item>
     <objid>8150</objid>
     <name>192.168.0.98 (Proxmox VE (iDrac)) [Dell Server]</name>
-   </item>
-   <item>
-    <objid>8174</objid>
-    <name>CCNET-SW-Master</name>
-   </item>
-   <item>
-    <objid>8590</objid>
-    <name>TWM AIC RRN</name>
-   </item>
-   <item>
-    <objid>8610</objid>
-    <name>TWM AIC HW</name>
-   </item>
-   <item>
-    <objid>8835</objid>
-    <name>Cisco2960G24</name>
    </item>
    <item>
     <objid>8988</objid>
@@ -276,25 +68,5 @@
    <item>
     <objid>9090</objid>
     <name>Finance-THINK</name>
-   </item>
-   <item>
-    <objid>9103</objid>
-    <name>CHT LRF</name>
-   </item>
-   <item>
-    <objid>9156</objid>
-    <name>192.168.0.205 (RD_VM_Device)</name>
-   </item>
-   <item>
-    <objid>9186</objid>
-    <name>Device</name>
-   </item>
-   <item>
-    <objid>9255</objid>
-    <name>Cisco-W2960S-48</name>
-   </item>
-   <item>
-    <objid>9323</objid>
-    <name>wan-gw</name>
    </item>
   </devices>

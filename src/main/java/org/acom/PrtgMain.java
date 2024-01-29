@@ -38,6 +38,8 @@ public class PrtgMain {
             case "rebuild":
                 logicChecker.featureRebuild(cmd);
                 break;
+            case "check" :
+                logicChecker.configFileExistsChecker();
             default:
                 System.out.println("command: java -jar PRTG_Generator.jar --[graph/history] --[start date] --[end date] \nNOTE: date format to \"yyyy-MM-dd-HH-mm-ss\"");
                 System.exit(0);

@@ -35,7 +35,7 @@ public class LogicCheckerImpl implements LogicChecker {
         if(new File(settingsPath).exists()){
             System.out.println("\"setting.xml OK!\"");
         } else {
-            System.out.println("Can't find the setting.xml file, please check if file is exists!");
+            System.out.println("settings.xml not found, please check if file is exists!");
             buildSettingXMLChecker();
         }
     }
@@ -44,7 +44,7 @@ public class LogicCheckerImpl implements LogicChecker {
     public void featureGraphic(CommandLine cmd) {
 
         if(cmd.hasOption("id")){
-            System.out.println("Start to download graphic since \""+cmd.getOptionValue("s")+"\" to \"" + cmd.getOptionValue("e")+"\", id: " + cmd.getOptionValue("id")+" ? [y/N]");
+            System.out.println("Starting to download graphic since \""+cmd.getOptionValue("s")+"\" to \"" + cmd.getOptionValue("e")+"\", id: " + cmd.getOptionValue("id")+" ? [y/N]");
             String tmp = scanner.nextLine();
             if(tmp.equalsIgnoreCase("y") || tmp.equalsIgnoreCase("yes")){
                 prtgGenerator.graphSingleDownload(cmd.getOptionValue("s"), cmd.getOptionValue("e"), cmd.getOptionValue("id"));
@@ -53,7 +53,7 @@ public class LogicCheckerImpl implements LogicChecker {
         }
 
 
-        System.out.println("Start to download graphic since \""+cmd.getOptionValue("s")+"\" to \"" + cmd.getOptionValue("e")+ "\" ? [y/N]");
+        System.out.println("Starting to download graphic since \""+cmd.getOptionValue("s")+"\" to \"" + cmd.getOptionValue("e")+ "\" ? [y/N]");
 
         String tmp = scanner.nextLine();
         if(tmp.equalsIgnoreCase("y") || tmp.equalsIgnoreCase("yes")){
@@ -66,7 +66,7 @@ public class LogicCheckerImpl implements LogicChecker {
 
     @Override
     public void featureHistory(CommandLine cmd) {
-        System.out.println("Start to download history file, xml or csv? [xml/csv] default: xml");
+        System.out.println("Starting to download history file, xml or csv? [xml/csv] default: xml");
         if(!scanner.nextLine().equalsIgnoreCase("csv")){
             prtgGenerator.historyDownload(cmd.getOptionValue("s"), cmd.getOptionValue("e"), "xml");
         } else{
@@ -77,7 +77,7 @@ public class LogicCheckerImpl implements LogicChecker {
 
     @Override
     public void featureRebuild(CommandLine cmd) {
-        System.out.println("start to re-build the \"settings.xml\" file.");
+        System.out.println("starting to re-build the \"settings.xml\" file.");
         XMLGenerator xmlGenerator = new XMLGeneratorImpl();
         xmlGenerator.settingsXMLGenerator();
         System.out.println("re-build completed, please check the file content.");
@@ -90,13 +90,26 @@ public class LogicCheckerImpl implements LogicChecker {
         String tmp = scanner.nextLine();
         String answer = tmp.isEmpty() ? "E" : tmp;
         if (answer.equalsIgnoreCase("d") || answer.equalsIgnoreCase("download")) {
-            downloadDeviceXML();
-            XMLGenerator xmlGenerator = new XMLGeneratorImpl();
-            xmlGenerator.settingsXMLGenerator();
+            System.out.println("Do you want to set the group ID or download all device? type [\"ID\"] or [S]kip, default [S]. ");
+            tmp = scanner.nextLine();
+            if(isInteger(tmp)){
+                System.out.println("String to download devices.xml of group ID: "+tmp);
+                downloadDeviceXML(tmp);
+                XMLGenerator xmlGenerator = new XMLGeneratorImpl();
+                xmlGenerator.settingsXMLGenerator();
+            }else {
+                System.out.println("Download devices.xml of all devices.");
+                System.exit(0);
+                downloadDeviceXML("");
+                XMLGenerator xmlGenerator = new XMLGeneratorImpl();
+                xmlGenerator.settingsXMLGenerator();
+            }
+
 
         } else if (answer.equalsIgnoreCase("R") || answer.equalsIgnoreCase("rebuild")){
             if(!new File(devicePath).exists()){
-                downloadDeviceXML();
+                System.out.println("Devices.xml file not found, starting to download devices.xml of all devices.");
+                downloadDeviceXML("");
             }
             XMLGenerator xmlGenerator = new XMLGeneratorImpl();
             xmlGenerator.settingsXMLGenerator();
@@ -105,10 +118,10 @@ public class LogicCheckerImpl implements LogicChecker {
         System.exit(0);
     }
 
-    private void downloadDeviceXML(){
+    private void downloadDeviceXML(String objid){
         XMLDownload xmlDownload = new XMLDownloadImpl();
         try {
-            URL url = urlGenerator.XMLURLGenerator("device", "");
+            URL url = urlGenerator.XMLURLGenerator("device", objid);
             File f = new File("." + File.separator + "devices");
             if (f.exists()) {
                 f.delete();
@@ -120,6 +133,14 @@ public class LogicCheckerImpl implements LogicChecker {
         }
         catch (IOException e) {
             throw new RuntimeException(e);
+        }
+    }
+    private boolean isInteger(String str){
+        try {
+            Integer.parseInt(str);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
         }
     }
 }
