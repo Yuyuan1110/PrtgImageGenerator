@@ -62,6 +62,20 @@
           <version>2.16.1</version>
       </dependency>
 
+      <!-- https://mvnrepository.com/artifact/org.apache.xmlgraphics/batik-transcoder -->
+      <dependency>
+          <groupId>org.apache.xmlgraphics</groupId>
+          <artifactId>batik-transcoder</artifactId>
+          <version>1.17</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.apache.xmlgraphics/batik-codec -->
+      <dependency>
+          <groupId>org.apache.xmlgraphics</groupId>
+          <artifactId>batik-codec</artifactId>
+          <version>1.17</version>
+      </dependency>
+
   </dependencies>
     <build>
         <plugins>

@@ -9,6 +9,7 @@ import org.acom.httpClient.Impl.HttpConnectorImpl;
 import org.acom.prtgGenerator.PRTGGenerator;
 import org.acom.prtgGenerator.URLGenerator;
 import org.acom.prtgGenerator.XMLDownload;
+import org.acom.tools.CommonTools;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -19,7 +20,6 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.*;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -34,7 +34,7 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
     private final DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
     DocumentBuilder builder;
     HttpURLConnection connection = null;
-
+    CommonTools commonTools = new CommonTools();
     @Override
     public void graphDownload(String sdate, String edate) {
 
@@ -51,7 +51,7 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
             for (int i = 0; i < deviceList.getLength(); i++) {
                 Element deviceElement = (Element) deviceList.item(i);
                 String deviceName = deviceElement.getElementsByTagName("deviceName").item(0).getTextContent();
-                deviceName = rename(deviceName);
+                deviceName = CommonTools.rename(deviceName);
                 new File(graphPath + File.separator + deviceName).mkdir();
                 NodeList sensorsList = deviceElement.getElementsByTagName("sensors");
                 Element sensorsElement = (Element) sensorsList.item(0);
@@ -78,7 +78,7 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
             for (int i = 0; i < deviceList.getLength(); i++) {
                 Element deviceElement = (Element) deviceList.item(i);
                 String deviceName = deviceElement.getElementsByTagName("deviceName").item(0).getTextContent();
-                deviceName = rename(deviceName);
+                deviceName = CommonTools.rename(deviceName);
                 new File(historyPath + File.separator + deviceName).mkdir();
                 NodeList sensorsList = deviceElement.getElementsByTagName("sensors");
                 Element sensorsElement = (Element) sensorsList.item(0);
@@ -124,12 +124,12 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
             String tmp = scanner.nextLine();
             gb.setHide(tmp.split(","));
             URL graphUrl = urlGenerator.GraphURLGenerator(gb);
+            new File(graphPath).mkdir();
             downLoadImage(graphUrl, graphPath + File.separator + id + ".png");
 
 
         } catch (InvalidDateException | IOException e) {
             throw new RuntimeException(e);
-        } finally {
         }
     }
 
@@ -138,7 +138,7 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
         for (int j = 0; j < sensorList.getLength(); j++) {
             Element sensorElement = (Element) sensorList.item(j);
             String sensorName = sensorElement.getElementsByTagName("sensorName").item(0).getTextContent();
-            sensorName = rename(sensorName);
+            sensorName = CommonTools.rename(sensorName);
             Element channelsElement = (Element) sensorElement.getElementsByTagName("channels").item(0);
             processChannels(channelsElement);
             gb.setId(Integer.parseInt(sensorElement.getElementsByTagName("sensorID").item(0).getTextContent()));
@@ -164,17 +164,9 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
         try (InputStream inputStream = connection.getInputStream();
              OutputStream outputStream = Files.newOutputStream(Paths.get(path))) {
 
-
             int responseCode = connection.getResponseCode();
-
             if (responseCode == HttpURLConnection.HTTP_OK) {
-
-                byte[] buffer = new byte[1024];
-                int bytesRead;
-                while ((bytesRead = inputStream.read(buffer)) != -1) {
-                    outputStream.write(buffer, 0, bytesRead);
-                }
-
+                commonTools.svgToPng(inputStream, outputStream);
                 System.out.println("Image downloaded successfully to: " + path);
             } else {
                 System.err.println("Failed to download image. Response Code: " + responseCode);
@@ -186,13 +178,5 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
                 connection.disconnect();
             }
         }
-    }
-
-    private String rename(String original) {
-
-        String stringWithoutSpecialChars = original.replaceAll("[<>:\\\"/\\\\\\\\|?*]", "");
-
-
-        return stringWithoutSpecialChars.replaceAll("\\s{2,}", " ").replaceAll("\\s", "_");
     }
 }

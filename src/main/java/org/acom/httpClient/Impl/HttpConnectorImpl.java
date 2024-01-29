@@ -45,6 +45,7 @@ public class HttpConnectorImpl implements HttpConnector {
         while (retryCount < maxRetries) {
             try {
                 connection = (HttpURLConnection) url.openConnection();
+                connection.setRequestProperty("Accept-Charset", "UTF-8");
                 connection.setRequestMethod("GET");
                 connection.setConnectTimeout(5000);
                 connection.setReadTimeout(30000);
