@@ -4,9 +4,16 @@ import org.acom.Exception.CannotDetectServerException;
 import org.acom.beans.ConfigBean;
 import org.acom.httpClient.HttpConnector;
 
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.X509Certificate;
 
 public class HttpConnectorImpl implements HttpConnector {
     private int responseCode;
@@ -16,8 +23,8 @@ public class HttpConnectorImpl implements HttpConnector {
     public int detectServer(ConfigBean configBean) {
         try {
             URL url = new URL(configBean.getProtocol() + "://" + configBean.getServerIP() + ":" + configBean.getPort() + "/api/table.xml?content=sensors&columns=sensor&username=" + configBean.getUsername() + "&password=" + configBean.getPassword());
-
-            connection = (HttpURLConnection) url.openConnection();
+            setDisableSSLCert();
+            connection = (HttpsURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
 
             responseCode = connection.getResponseCode();
@@ -44,17 +51,19 @@ public class HttpConnectorImpl implements HttpConnector {
 
         while (retryCount < maxRetries) {
             try {
-                connection = (HttpURLConnection) url.openConnection();
+                setDisableSSLCert();
+                connection = (HttpsURLConnection) url.openConnection();
                 connection.setRequestProperty("Accept-Charset", "UTF-8");
                 connection.setRequestMethod("GET");
+
                 connection.setConnectTimeout(5000);
-                connection.setReadTimeout(30000);
+                connection.setReadTimeout(15000);
                 System.out.println("Response Code: " + connection.getResponseCode());
                 return connection;
             } catch (IOException e) {
                 // 捕捉连接异常
                 if (e instanceof java.net.SocketTimeoutException) {
-                    System.out.println("Connection timed out. Retrying...("+retryCount+1+"/"+maxRetries+")");
+                    System.out.println("Connection timed out. Retrying...(" + retryCount + 1 + "/" + maxRetries + ")");
                     retryCount++;
                 } else {
                     throw new RuntimeException(e);
@@ -63,6 +72,39 @@ public class HttpConnectorImpl implements HttpConnector {
         }
         System.out.println("Max retries reached. Unable to establish connection. Throwing exception...");
         throw new RuntimeException("Unable to establish connection after max retries");
+
+    }
+
+
+    private void setDisableSSLCert() {
+
+        // 创建信任所有证书的 TrustManager
+        TrustManager[] trustAllCerts = new TrustManager[]{
+                new X509TrustManager() {
+                    public X509Certificate[] getAcceptedIssuers() {
+                        return null;
+                    }
+
+                    public void checkClientTrusted(X509Certificate[] certs, String authType) {
+                    }
+
+                    public void checkServerTrusted(X509Certificate[] certs, String authType) {
+                    }
+                }
+        };
+
+        // 创建 SSL 上下文，忽略证书验证
+        SSLContext sslContext = null;
+        try {
+            sslContext = SSLContext.getInstance("TLS");
+            sslContext.init(null, trustAllCerts, new java.security.SecureRandom());
+
+
+            // 将忽略证书验证的 SSL 上下文设置到 HttpsURLConnection
+            HttpsURLConnection.setDefaultSSLSocketFactory(sslContext.getSocketFactory());
+        } catch (NoSuchAlgorithmException | KeyManagementException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 }

@@ -36,5 +36,6 @@ build/
 ./devices/
 ./graph/
 ./history/
+./PRTGConfig/
 ### Mac OS ###
 .DS_Store
