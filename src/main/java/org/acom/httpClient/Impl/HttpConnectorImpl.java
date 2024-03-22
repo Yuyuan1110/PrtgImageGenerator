@@ -4,12 +4,11 @@ import org.acom.Exception.CannotDetectServerException;
 import org.acom.beans.ConfigBean;
 import org.acom.httpClient.HttpConnector;
 
-import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.X509TrustManager;
+import javax.net.ssl.*;
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
 import java.net.URL;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
@@ -17,16 +16,37 @@ import java.security.cert.X509Certificate;
 
 public class HttpConnectorImpl implements HttpConnector {
     private int responseCode;
-    private HttpURLConnection connection = null;
+    private HttpsURLConnection connection = null;
 
     @Override
     public int detectServer(ConfigBean configBean) {
         try {
-            URL url = new URL(configBean.getProtocol() + "://" + configBean.getServerIP() + ":" + configBean.getPort() + "/api/table.xml?content=sensors&columns=sensor&username=" + configBean.getUsername() + "&password=" + configBean.getPassword());
-            setDisableSSLCert();
-            connection = (HttpsURLConnection) url.openConnection();
-            connection.setRequestMethod("GET");
+            TrustManager[] trustAllCerts = new TrustManager[]{
+                    new X509TrustManager() {
+                        public X509Certificate[] getAcceptedIssuers() {
+                            return null;
+                        }
 
+                        public void checkClientTrusted(X509Certificate[] certs, String authType) {
+                        }
+
+                        public void checkServerTrusted(X509Certificate[] certs, String authType) {
+                        }
+                    }
+            };
+
+            // 啟用忽略 SSL/TLS 憑證驗證
+            SSLContext sslContext = SSLContext.getInstance("SSL");
+            sslContext.init(null, trustAllCerts, new java.security.SecureRandom());
+            HttpsURLConnection.setDefaultSSLSocketFactory(sslContext.getSocketFactory());
+            HttpsURLConnection.setDefaultHostnameVerifier(new IgnoreHostnameVerifier());
+            URL url = new URL(configBean.getProtocol() + "://" + configBean.getServerIP() + ":" + configBean.getPort() + "/api/table.xml?content=sensors&columns=sensor&username=" + configBean.getUsername() + "&password=" + configBean.getPassword());
+
+
+            connection = (HttpsURLConnection) url.openConnection();
+            connection.setSSLSocketFactory(sslContext.getSocketFactory());
+            connection.setRequestMethod("GET");
+            connection.connect();
             responseCode = connection.getResponseCode();
             System.out.println("HTTP Response Code: " + responseCode);
 
@@ -39,6 +59,9 @@ public class HttpConnectorImpl implements HttpConnector {
             if (connection != null) {
                 connection.disconnect();
             }
+//            if (httpsConnection != null) {
+//                httpsConnection.disconnect();
+//            }
         }
         return responseCode;
     }
@@ -51,10 +74,32 @@ public class HttpConnectorImpl implements HttpConnector {
 
         while (retryCount < maxRetries) {
             try {
-                setDisableSSLCert();
+                TrustManager[] trustAllCerts = new TrustManager[]{
+                        new X509TrustManager() {
+                            public X509Certificate[] getAcceptedIssuers() {
+                                return null;
+                            }
+
+                            public void checkClientTrusted(X509Certificate[] certs, String authType) {
+                            }
+
+                            public void checkServerTrusted(X509Certificate[] certs, String authType) {
+                            }
+                        }
+                };
+
+                // 啟用忽略 SSL/TLS 憑證驗證
+                SSLContext sslContext = SSLContext.getInstance("SSL");
+                sslContext.init(null, trustAllCerts, new java.security.SecureRandom());
+                HttpsURLConnection.setDefaultSSLSocketFactory(sslContext.getSocketFactory());
+                HttpsURLConnection.setDefaultHostnameVerifier(new IgnoreHostnameVerifier());
+
                 connection = (HttpsURLConnection) url.openConnection();
-                connection.setRequestProperty("Accept-Charset", "UTF-8");
+                connection.setSSLSocketFactory(sslContext.getSocketFactory());
                 connection.setRequestMethod("GET");
+                connection.setRequestProperty("Accept-Charset", "UTF-8");
+                connection.connect();
+//                connection = (HttpURLConnection) httpsConnection;
 
                 connection.setConnectTimeout(5000);
                 connection.setReadTimeout(15000);
@@ -68,6 +113,10 @@ public class HttpConnectorImpl implements HttpConnector {
                 } else {
                     throw new RuntimeException(e);
                 }
+            } catch (NoSuchAlgorithmException e) {
+                throw new RuntimeException(e);
+            } catch (KeyManagementException e) {
+                throw new RuntimeException(e);
             }
         }
         System.out.println("Max retries reached. Unable to establish connection. Throwing exception...");
@@ -76,35 +125,11 @@ public class HttpConnectorImpl implements HttpConnector {
     }
 
 
-    private void setDisableSSLCert() {
-
-        // 创建信任所有证书的 TrustManager
-        TrustManager[] trustAllCerts = new TrustManager[]{
-                new X509TrustManager() {
-                    public X509Certificate[] getAcceptedIssuers() {
-                        return null;
-                    }
-
-                    public void checkClientTrusted(X509Certificate[] certs, String authType) {
-                    }
-
-                    public void checkServerTrusted(X509Certificate[] certs, String authType) {
-                    }
-                }
-        };
-
-        // 创建 SSL 上下文，忽略证书验证
-        SSLContext sslContext = null;
-        try {
-            sslContext = SSLContext.getInstance("TLS");
-            sslContext.init(null, trustAllCerts, new java.security.SecureRandom());
-
-
-            // 将忽略证书验证的 SSL 上下文设置到 HttpsURLConnection
-            HttpsURLConnection.setDefaultSSLSocketFactory(sslContext.getSocketFactory());
-        } catch (NoSuchAlgorithmException | KeyManagementException e) {
-            throw new RuntimeException(e);
+    private class IgnoreHostnameVerifier implements HostnameVerifier {
+        @Override
+        public boolean verify(String hostname, SSLSession session) {
+            // 忽略主機名稱驗證，始終返回 true
+            return true;
         }
-
     }
 }
