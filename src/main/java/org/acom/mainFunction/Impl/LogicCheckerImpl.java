@@ -1,5 +1,8 @@
 package org.acom.mainFunction.Impl;
 
+import org.acom.Exception.InvalidDateException;
+import org.acom.beans.GraphBean;
+import org.acom.beans.HistoryBean;
 import org.acom.configReader.Impl.ConfigReaderImpl;
 import org.acom.mainFunction.LogicChecker;
 import org.acom.prtgGenerator.Impl.PRTGGeneratorImpl;
@@ -23,6 +26,9 @@ public class LogicCheckerImpl implements LogicChecker {
     private static final URLGenerator urlGenerator = new URLGeneratorImpl();
     private static final String devicePath = "." + File.separator + "devices" + File.separator + "devices.xml";
     private static final PRTGGenerator prtgGenerator = new PRTGGeneratorImpl();
+    private final GraphBean gb = new GraphBean();
+    private final HistoryBean historyBean = new HistoryBean();
+
     @Override
     public void configFileExistsChecker() {
 
@@ -32,7 +38,7 @@ public class LogicCheckerImpl implements LogicChecker {
 
 
         System.out.println("checking if the \"setting.xml\" file exists?");
-        if(new File(settingsPath).exists()){
+        if (new File(settingsPath).exists()) {
             System.out.println("\"setting.xml OK!\"");
         } else {
             System.out.println("settings.xml not found, please check if file is exists!");
@@ -43,21 +49,40 @@ public class LogicCheckerImpl implements LogicChecker {
     @Override
     public void featureGraphic(CommandLine cmd) {
 
-        if(cmd.hasOption("id")){
-            System.out.println("Starting to download graphic since \""+cmd.getOptionValue("s")+"\" to \"" + cmd.getOptionValue("e")+"\", id: " + cmd.getOptionValue("id")+" ? [y/N]");
+        if (cmd.hasOption("id")) {
+            System.out.println("Starting to download graphic since \"" + cmd.getOptionValue("s") + "\" to \"" + cmd.getOptionValue("e") + "\", id: " + cmd.getOptionValue("id") + " ? [y/N]");
             String tmp = scanner.nextLine();
-            if(tmp.equalsIgnoreCase("y") || tmp.equalsIgnoreCase("yes")){
-                prtgGenerator.graphSingleDownload(cmd.getOptionValue("s"), cmd.getOptionValue("e"), cmd.getOptionValue("id"));
+            if (tmp.equalsIgnoreCase("y") || tmp.equalsIgnoreCase("yes")) {
+                gb.setId(cmd.getOptionValue("id"));
+                gb.setStartDate(cmd.getOptionValue("s"));
+                try {
+                    gb.setEndDate(cmd.getOptionValue("e"));
+                } catch (InvalidDateException e) {
+                    throw new RuntimeException(e);
+                }
+                prtgGenerator.graphSingleDownload(gb);
             }
             System.exit(0);
         }
 
 
-        System.out.println("Starting to download graphic since \""+cmd.getOptionValue("s")+"\" to \"" + cmd.getOptionValue("e")+ "\" ? [y/N]");
+        System.out.println("Starting to download graphic since \"" + cmd.getOptionValue("s") + "\" to \"" + cmd.getOptionValue("e") + "\" ? [y/N]");
 
         String tmp = scanner.nextLine();
-        if(tmp.equalsIgnoreCase("y") || tmp.equalsIgnoreCase("yes")){
-            prtgGenerator.graphDownload(cmd.getOptionValue("s"), cmd.getOptionValue("e"));
+        if (tmp.equalsIgnoreCase("y") || tmp.equalsIgnoreCase("yes")) {
+            gb.setId(cmd.getOptionValue("id"));
+            gb.setStartDate(cmd.getOptionValue("s"));
+            try {
+                gb.setEndDate(cmd.getOptionValue("e"));
+            } catch (InvalidDateException e) {
+                throw new RuntimeException(e);
+            }
+
+            if (cmd.hasOption("S")) {
+                prtgGenerator.graphDownload(gb, cmd.getOptionValue("S"));
+            } else {
+                prtgGenerator.graphDownload(gb);
+            }
         } else {
             System.out.println("bye bye!");
             System.exit(0);
@@ -67,10 +92,12 @@ public class LogicCheckerImpl implements LogicChecker {
     @Override
     public void featureHistory(CommandLine cmd) {
         System.out.println("Starting to download history file, xml or csv? [xml/csv] default: xml");
-        if(!scanner.nextLine().equalsIgnoreCase("csv")){
-            prtgGenerator.historyDownload(cmd.getOptionValue("s"), cmd.getOptionValue("e"), "xml");
-        } else{
-            prtgGenerator.historyDownload(cmd.getOptionValue("s"), cmd.getOptionValue("e"), "csv");
+        if (!scanner.nextLine().equalsIgnoreCase("csv")) {
+            historyBean.setStartDate(cmd.getOptionValue("s"));
+            historyBean.setEndDate(cmd.getOptionValue("e"));
+            prtgGenerator.historyDownload(historyBean, "xml");
+        } else {
+            prtgGenerator.historyDownload(historyBean, "csv");
         }
         System.exit(0);
     }
@@ -92,12 +119,12 @@ public class LogicCheckerImpl implements LogicChecker {
         if (answer.equalsIgnoreCase("d") || answer.equalsIgnoreCase("download")) {
             System.out.println("Do you want to set the group ID or download all device? type [\"ID\"] or [S]kip, default [S]. ");
             tmp = scanner.nextLine();
-            if(isInteger(tmp)){
-                System.out.println("String to download devices.xml of group ID: "+tmp);
+            if (isInteger(tmp)) {
+                System.out.println("String to download devices.xml of group ID: " + tmp);
                 downloadDeviceXML(tmp);
                 XMLGenerator xmlGenerator = new XMLGeneratorImpl();
                 xmlGenerator.settingsXMLGenerator();
-            }else {
+            } else {
                 System.out.println("Download devices.xml of all devices.");
                 System.exit(0);
                 downloadDeviceXML("");
@@ -106,8 +133,8 @@ public class LogicCheckerImpl implements LogicChecker {
             }
 
 
-        } else if (answer.equalsIgnoreCase("R") || answer.equalsIgnoreCase("rebuild")){
-            if(!new File(devicePath).exists()){
+        } else if (answer.equalsIgnoreCase("R") || answer.equalsIgnoreCase("rebuild")) {
+            if (!new File(devicePath).exists()) {
                 System.out.println("Devices.xml file not found, starting to download devices.xml of all devices.");
                 downloadDeviceXML("");
             }
@@ -118,7 +145,7 @@ public class LogicCheckerImpl implements LogicChecker {
         System.exit(0);
     }
 
-    private void downloadDeviceXML(String objid){
+    private void downloadDeviceXML(String objid) {
         XMLDownload xmlDownload = new XMLDownloadImpl();
         try {
             URL url = urlGenerator.XMLURLGenerator("device", objid);
@@ -127,15 +154,15 @@ public class LogicCheckerImpl implements LogicChecker {
                 f.delete();
             }
             f.mkdir();
-            xmlDownload.downloadXML(url,devicePath );
+            xmlDownload.downloadXML(url, devicePath);
             xmlDownload.createXMLConfig();
 
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
-    private boolean isInteger(String str){
+
+    private boolean isInteger(String str) {
         try {
             Integer.parseInt(str);
             return true;

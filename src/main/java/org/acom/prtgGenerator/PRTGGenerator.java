@@ -1,9 +1,13 @@
 package org.acom.prtgGenerator;
 
+import org.acom.beans.GraphBean;
+import org.acom.beans.HistoryBean;
+
 public interface PRTGGenerator {
-    public void graphDownload(String sdate, String edate);
+    public void graphDownload(GraphBean graphBean);
+    void graphDownload(GraphBean graphBean, String settingsFile);
 
-    void historyDownload(String sdate, String edate, String type);
+    void historyDownload(HistoryBean historyBean, String type);
 
-    public void graphSingleDownload(String sdate, String edate, String id);
+    public void graphSingleDownload(GraphBean graphBean);
 }

@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.Date;
 
 public class GraphBean {
-    int id;
+    String id;
     int avg;
     String startDate;
     String endDate;
@@ -20,11 +20,12 @@ public class GraphBean {
     String password;
     String[] hide;
 
+
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
     public GraphBean() {
     }
 
-    public GraphBean(int id, int avg, String startDate, String endDate, int width, int height, String graphStyling, ConfigBean configBean, String username, String password, String[] hide, SimpleDateFormat sdf) {
+    public GraphBean(String id, int avg, String startDate, String endDate, int width, int height, String graphStyling, ConfigBean configBean, String username, String password, String[] hide, SimpleDateFormat sdf) {
         this.id = id;
         this.avg = avg;
         this.startDate = startDate;
@@ -39,11 +40,11 @@ public class GraphBean {
         this.sdf = sdf;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -19,7 +19,7 @@ public class PrtgGeneratorTest {
         ConfigReader rc = new ConfigReaderImpl();
         cb = rc.readConfig();
         GraphBean gb = new GraphBean();
-        gb.setId(7877);
+        gb.setId("7877");
         gb.setConfigBean(cb);
         gb.setStartDate("2023-01-1-0-0-0");
         gb.setEndDate("2023-10-1-23-59-0");
