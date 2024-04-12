@@ -100,7 +100,7 @@ public class GraphBean {
     }
 
     public String getAvg() {
-        return avg.equals("0") ? "86400" : avg;
+        return avg == null ? "86400" : avg;
     }
 
     public void setAvg(String avg) {
