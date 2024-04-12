@@ -9,7 +9,7 @@ import java.util.Date;
 
 public class GraphBean {
     String id;
-    int avg;
+    String avg;
     String startDate;
     String endDate;
     int width;
@@ -25,7 +25,7 @@ public class GraphBean {
     public GraphBean() {
     }
 
-    public GraphBean(String id, int avg, String startDate, String endDate, int width, int height, String graphStyling, ConfigBean configBean, String username, String password, String[] hide, SimpleDateFormat sdf) {
+    public GraphBean(String id, String avg, String startDate, String endDate, int width, int height, String graphStyling, ConfigBean configBean, String username, String password, String[] hide, SimpleDateFormat sdf) {
         this.id = id;
         this.avg = avg;
         this.startDate = startDate;
@@ -99,11 +99,11 @@ public class GraphBean {
         this.endDate = endDate;
     }
 
-    public int getAvg() {
-        return avg == 0 ? 86400 : avg;
+    public String getAvg() {
+        return avg.equals("0") ? "86400" : avg;
     }
 
-    public void setAvg(int avg) {
+    public void setAvg(String avg) {
         this.avg = avg;
     }
 

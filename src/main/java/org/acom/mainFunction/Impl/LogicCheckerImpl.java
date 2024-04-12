@@ -55,6 +55,7 @@ public class LogicCheckerImpl implements LogicChecker {
             if (tmp.equalsIgnoreCase("y") || tmp.equalsIgnoreCase("yes")) {
                 gb.setId(cmd.getOptionValue("id"));
                 gb.setStartDate(cmd.getOptionValue("s"));
+                gb.setAvg(cmd.hasOption("i") ? cmd.getOptionValue("i") : "0");
                 try {
                     gb.setEndDate(cmd.getOptionValue("e"));
                 } catch (InvalidDateException e) {
@@ -66,12 +67,13 @@ public class LogicCheckerImpl implements LogicChecker {
         }
 
 
-        System.out.println("Starting to download graphic since \"" + cmd.getOptionValue("s") + "\" to \"" + cmd.getOptionValue("e") + "\" ? [y/N]");
+        System.out.println("Start downloading graphics since \"" + cmd.getOptionValue("s") + "\" to \"" + cmd.getOptionValue("e") + "\" ? [y/N]");
 
         String tmp = scanner.nextLine();
         if (tmp.equalsIgnoreCase("y") || tmp.equalsIgnoreCase("yes")) {
             gb.setId(cmd.getOptionValue("id"));
             gb.setStartDate(cmd.getOptionValue("s"));
+            gb.setAvg(cmd.hasOption("i") ? cmd.getOptionValue("i") : "0");
             try {
                 gb.setEndDate(cmd.getOptionValue("e"));
             } catch (InvalidDateException e) {
