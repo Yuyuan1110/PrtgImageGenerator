@@ -31,6 +31,8 @@ public class CommonsCLIImpl implements CommonsCLI {
     private void help(){
         System.out.println("HOW TO USED: ");
         System.out.println("[-f] [--feature]: set feature. \nNeed type parameter: \n\"graphic\" to download history graphic \n\"history\" to download history data. \n\"rebuild\" to rebuild settings.xml file.");
+        System.out.println("[-S] [--settingsFile]: Specify the settings file ex: -S setting.xml");
+        System.out.println("[-i] [--interval]: set interval, no interval = 0, 1 hour = 3600, ex: -i 86400");
         System.out.println("[-s] [--sdate]: set query start date, format to \"yyyy-MM-dd-HH-mm-ss\"");
         System.out.println("[-e] [--edate]: set query end date, format to \"yyyy-MM-dd-HH-mm-ss\"");
         System.out.println("\nCOMMAND: java -jar PRTG_Generator.jar -f [graph/history] --[start date] --[end date] \nNOTE: date format to \"yyyy-MM-dd-HH-mm-ss\"\n");
