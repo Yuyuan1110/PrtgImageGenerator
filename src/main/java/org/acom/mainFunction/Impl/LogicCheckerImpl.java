@@ -30,20 +30,38 @@ public class LogicCheckerImpl implements LogicChecker {
     private final HistoryBean historyBean = new HistoryBean();
 
     @Override
-    public void configFileExistsChecker() {
+    public void configFileExistsChecker(CommandLine cmd) {
 
         System.out.println("checking if the \"config.properties\" file exists?");
         new ConfigReaderImpl().readConfig();
         System.out.println("\"config.properties OK!\"");
 
 
-        System.out.println("checking if the \"setting.xml\" file exists?");
-        if (new File(settingsPath).exists()) {
-            System.out.println("\"setting.xml OK!\"");
+        System.out.println("checking if the settings file ...");
+
+        if (cmd.hasOption('S') && new File(cmd.getOptionValue("S")).exists()) {
+            System.out.println("Settings file check OK!");
+        } else if (new File(settingsPath).exists()) {
+            System.out.println("Settings file OK!");
         } else {
-            System.out.println("settings.xml not found, please check if file is exists!");
+            System.out.println("The settings file cannot be found, please check if the file exists!");
             buildSettingXMLChecker();
         }
+//        if(cmd.hasOption('S')){
+//            if(new File(cmd.getOptionValue("S")).exists()){
+//                System.out.println("settings file check OK!");
+//            } else {
+//                System.out.println("the settings file cannot be found, please check if the file exists!");
+//                buildSettingXMLChecker();
+//            }
+//        } else {
+//            if (new File(settingsPath).exists()) {
+//                System.out.println("\"setting.xml OK!\"");
+//            } else {
+//                System.out.println("the settings file cannot be found, please check if the file exists!");
+//                buildSettingXMLChecker();
+//            }
+//        }
     }
 
     @Override
@@ -71,7 +89,7 @@ public class LogicCheckerImpl implements LogicChecker {
 
         String tmp = scanner.nextLine();
         if (tmp.equalsIgnoreCase("y") || tmp.equalsIgnoreCase("yes")) {
-            gb.setId(cmd.getOptionValue("id"));
+//            gb.setId(cmd.getOptionValue("id"));
             gb.setStartDate(cmd.getOptionValue("s"));
             gb.setAvg(cmd.hasOption("i") ? cmd.getOptionValue("i") : "0");
             try {

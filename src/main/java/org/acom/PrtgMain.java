@@ -22,11 +22,11 @@ public class PrtgMain {
         PRTGGenerator prtgGenerator = new PRTGGeneratorImpl();
         switch (cmd.getOptionValue("f")) {
             case "graphic":
-                logicChecker.configFileExistsChecker();
+                logicChecker.configFileExistsChecker(cmd);
                 logicChecker.featureGraphic(cmd);
                 break;
             case "history":
-                logicChecker.configFileExistsChecker();
+                logicChecker.configFileExistsChecker(cmd);
                 logicChecker.featureHistory(cmd);
 //                System.out.println("Start to download history file, xml or csv? [xml/csv] default: xml");
 //                if(!scanner.nextLine().equalsIgnoreCase("csv")){
@@ -39,7 +39,7 @@ public class PrtgMain {
                 logicChecker.featureRebuild(cmd);
                 break;
             case "check" :
-                logicChecker.configFileExistsChecker();
+                logicChecker.configFileExistsChecker(cmd);
             default:
                 System.out.println("command: java -jar PRTG_Generator.jar --[graph/history] --[start date] --[end date] \nNOTE: date format to \"yyyy-MM-dd-HH-mm-ss\"");
                 System.exit(0);
