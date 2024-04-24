@@ -10,8 +10,8 @@ public class CommonsCLIImpl implements CommonsCLI {
         options.addOption("f", "feature",true, "Feature: graphic/history");
         options.addOption("s", "sdate",true, "Start date, format: \"yyyy-MM-dd-HH-mm-ss\"");
         options.addOption("e", "edate",true, "End date, format: \"yyyy-MM-dd-HH-mm-ss\"");
-        options.addOption("S", "settingsFile",false, "Specify settings file.");
-        options.addOption("i", "interval",false, "set interval, no interval = 0, 1 hour = 3600, 1 day = 86400.");
+        options.addOption("S", "settingsFile",true, "Specify settings file.");
+        options.addOption("i", "interval",true, "set interval, no interval = 0, 1 hour = 3600, 1 day = 86400.");
         options.addOption("r", "rebuild",false, "Re-build the \"settings.xml\" file.");
         options.addOption("id",true, "Get data from specific device ID.");
         options.addOption("h", "help", false, "help");

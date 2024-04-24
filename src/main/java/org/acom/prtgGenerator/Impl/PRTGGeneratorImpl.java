@@ -30,7 +30,7 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
     private final String settingsPath = "." + File.separator + "settings.xml";
     private final String graphPath = "." + File.separator + "graph";
     private final String historyPath = "." + File.separator + "history";
-    private final GraphBean gb = new GraphBean();
+//    private final GraphBean gb = new GraphBean();
     private final DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
     DocumentBuilder builder;
     HttpURLConnection connection = null;
@@ -53,7 +53,7 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
                 new File(graphPath + File.separator + deviceName).mkdir();
                 NodeList sensorsList = deviceElement.getElementsByTagName("sensors");
                 Element sensorsElement = (Element) sensorsList.item(0);
-                processSensors(sensorsElement, deviceName);
+                processSensors(gb, sensorsElement, deviceName);
             }
         } catch (ParserConfigurationException | IOException | SAXException e) {
             throw new RuntimeException(e);
@@ -77,7 +77,7 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
                 new File(graphPath + File.separator + deviceName).mkdir();
                 NodeList sensorsList = deviceElement.getElementsByTagName("sensors");
                 Element sensorsElement = (Element) sensorsList.item(0);
-                processSensors(sensorsElement, deviceName);
+                processSensors(gb, sensorsElement, deviceName);
             }
         } catch (ParserConfigurationException | SAXException e) {
             throw new RuntimeException(e);
@@ -152,21 +152,21 @@ public class PRTGGeneratorImpl implements PRTGGenerator {
         }
     }
 
-    private void processSensors(Element sensorsElement, String deviceName) throws IOException {
+    private void processSensors(GraphBean gb, Element sensorsElement, String deviceName) throws IOException {
         NodeList sensorList = sensorsElement.getElementsByTagName("sensor");
         for (int j = 0; j < sensorList.getLength(); j++) {
             Element sensorElement = (Element) sensorList.item(j);
             String sensorName = sensorElement.getElementsByTagName("sensorName").item(0).getTextContent();
             sensorName = CommonTools.rename(sensorName);
             Element channelsElement = (Element) sensorElement.getElementsByTagName("channels").item(0);
-            processChannels(channelsElement);
+            processChannels(gb, channelsElement);
             gb.setId(sensorElement.getElementsByTagName("sensorID").item(0).getTextContent());
             URL url = urlGenerator.GraphURLGenerator(gb);
             downLoadImage(url, graphPath + File.separator + deviceName + File.separator + sensorName + ".png");
         }
     }
 
-    private void processChannels(Element channelsElement) {
+    private void processChannels(GraphBean gb,Element channelsElement) {
         NodeList channelList = channelsElement.getElementsByTagName("channel");
         String[] channels = new String[channelList.getLength()];
         for (int k = 0; k < channelList.getLength(); k++) {

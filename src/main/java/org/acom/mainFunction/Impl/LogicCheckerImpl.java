@@ -38,8 +38,8 @@ public class LogicCheckerImpl implements LogicChecker {
 
 
         System.out.println("checking if the settings file ...");
-
-        if (cmd.hasOption('S') && new File(cmd.getOptionValue("S")).exists()) {
+        if (cmd.hasOption("S")) {
+            System.out.println(new File(cmd.getOptionValue("settingsFile")).exists());
             System.out.println("Settings file check OK!");
         } else if (new File(settingsPath).exists()) {
             System.out.println("Settings file OK!");
