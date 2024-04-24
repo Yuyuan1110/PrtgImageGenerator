@@ -17,6 +17,8 @@
         "graphic" to download history graphic
         "history" to download history data.
         "rebuild" to rebuild settings.xml file.
+        [-S] [--settingsFile]: Specify the settings file ex: -S setting.xml
+        [-i] [--interval]: set interval, no interval = 0, 1 hour = 3600, ex: -i 86400
         [-s] [--sdate]: set query start date, format to "yyyy-MM-dd-HH-mm-ss"
         [-e] [--edate]: set query end date, format to "yyyy-MM-dd-HH-mm-ss"
        
